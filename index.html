@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>线程优化模块使用说明</title>
+    <style>
+        :root { font-size: 16px; }
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 { color: #2c3e50; font-size: 1.8rem; }
+        h2 { 
+            color: #34495e; 
+            border-bottom: 2px solid #ecf0f1;
+            font-size: 1.4rem;
+            margin-top: 1.5em;
+        }
+        h3 { color: #7f8c8d; font-size: 1.1rem; }
+        .code {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: Consolas, monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .example {
+            background: #f0f8ff;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+        .warning { color: #e74c3c; }
+        .download {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            body { margin: 10px auto; }
+            h1 { font-size: 1.5rem; }
+            .code { font-size: 0.9rem; padding: 10px; font-size: 0.73rem;}
+        }
+    </style>
+</head>
+<body>
+    <h1>线程优化模块使用说明</h1>
+
+    <div class="synopsis">
+        <p>一个使用纯C语言编写，支持定义规则的安卓应用与游戏线程优化程序</p>
+    </div>
+
+    <h2>一、核心概念与配置</h2>
+
+    <h3>1. 配置文件路径</h3>
+    <div class="code">/data/adb/modules/AppOpt/applist.conf</div>
+    <h3>2. 处理器架构示例（以高通骁龙888八核处理器为例）</h3>
+    <div class="example">
+        <p>采用了4+3+1核心设计：</p>
+        <ul>
+            <li>0-3：四颗A55小核（能效核心）</li>
+            <li>4-6：三颗A78中核（性能核心）</li>
+            <li>7：一颗X1大核（高性能核心）</li>
+            <li>0-7：全部核心</li>
+        </ul>
+    </div>
+
+    <h2>二、规则解析与示例</h2>
+    <div class="example">
+        <h3>示例1 进程级规则：应用包名=核心范围</h3>
+        <div class="code">com.tencent.tmgp.sgame=4-7</div>
+        <p>将王者荣耀所有线程绑定到CPU4-7（性能核心）</p>
+    </div>
+
+    <div class="example">
+        <h3>示例2 线程级规则：应用包名{线程名}=核心范围</h3>
+        <div class="code">com.tencent.tmgp.sgame{UnityMain}=7</div>
+        <p>精准绑定王者荣耀的UnityMain线程到超大核心7</p>
+    </div>
+
+    <h2>三、CPU核心范围表示法</h2>
+    <div class="code">
+        <ul>
+            <li>4-7 ➔ 4到7（CPU4,5,6,7）</li>
+            <li>4,7 ➔ 4与7（CPU4,7）</li>
+            <li>0-3,7 ➔ 0到3与7（CPU0,1,2,3,7）</li>
+        </ul>
+    </div>
+
+    <h2>四、通配符高级用法</h2>
+    <div class="example">
+        <div class="code">com.tencent.tmgp.sgame{Unity*}=6-7</div>
+        <p>匹配所有Unity开头的线程（如UnityMain、UnityGfxDeviceW）</p>
+        <div class="code">com.example.app{*Main}=4-6</div>
+        <p>匹配所有以Main结尾的线程</p>
+        <div class="code">com.tencent.tmgp.sgame{Job.worker [1-2]}=4-6</div>
+        <p>匹配名为Job.worker 1与Job.worker 2的线程</p>
+        <div class="code">com.tencent.tmgp.sgame{Thread-[0-9]*}=4-6</div>
+        <p>匹配Thread-开头且后一位为数字的线程，例如Thread-123、Thread-0abc</p>
+    </div>
+
+    <h2>五、规则编写指南</h2>
+    <ol>
+        <li>线程分配应该遵循高占用线程优先分配性能核心，中/低占用分配到中/小核心簇，避免线程间争抢资源。</li>
+        <li>单个线程在任意时刻只能在一个CPU核心上执行指令，其指令流具有顺序性和依赖性，无法被拆分到多个核心并行处理。</li>
+        <li>线程级规则优先级高于进程级。</li>
+    </ol>
+
+    <div class="example">
+        <h3>王者荣耀优化示例</h3>
+        <p>例如我手机CPU为高通骁龙8 Elite，采用了6+2核心设计，有六颗中核（0-5）与两颗高性能大核（6-7），而王者荣耀UnityMain与UnityGfxDeviceW两个线程CPU占用是最大的，那么我可以将优化规则写为</p>
+        <div class="code">com.tencent.tmgp.sgame{Unity*}=6-7</div>
+        <div class="code">com.tencent.tmgp.sgame=0-5</div>
+        <p>它表示将Unity开头的两个高占用线程绑定到高性能大核，其它线程绑定到0-5。</p>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="https://bbsstatic.oneplus.com/upload/image/front/thread/20250312/3105083027150058121/1814949869203226628/1814949869203226628.jpg" alt="性能监测示意图" style="max-width: 90%; height: auto; border-radius: 5px;">
+        </div>
+    </div>
+    <div class="example">
+        <h3>FTP应用优化示例</h3>
+        <div class="code">com.ftpshare=4-7</div>
+        <p>例如我手机上有一个FTP共享文件的应用，它的优化不太好，老是跑在小核心上，导致文件共享的速度不够快，那么我为它添加上述规则，就可以提升文件共享速度了。</p>
+    </div>
+    <div class="example">
+        <h3>游戏应用优化逻辑</h3>
+        <p>依旧用王者荣耀举例。假设当前设备是4+3+1核心设计的CPU，我们可以将最高负载的一个线程放超大核7，中等负载放中核4-6，低负载0-6。</p>
+        <p>可以得出以下4条规则：</p>
+        <div class="code">com.tencent.tmgp.sgame{UnityMain}=7</div>
+        <div class="code">com.tencent.tmgp.sgame{UnityGfxDeviceW}=4-6</div>
+        <div class="code">com.tencent.tmgp.sgame{Job.worker*}=4-6</div>
+        <div class="code">com.tencent.tmgp.sgame=0-6</div>
+        <p>将这4条规则保存到applist.conf中即可</p>
+    </div>
+
+    <h2>六、优化验证与调试</h2>
+    <div class="example">
+        <p>推荐工具：</p>
+        <ul>
+            <li><code>Scene8</code> 中的线程监视器</li>
+            <li>其它类似的性能分析工具</li>
+        </ul>
+        <p>验证步骤：</p>
+        <ol>
+            <li>观察每个线程CPU核心占用后为其合理分配核心</li>
+            <li>这条规则实际性能优化表现（帧率/延迟）</li>
+            <li>合理的线程规划可以让游戏帧率更稳定的同时功耗更低</li>
+        </ol>
+    </div>
+
+
+    <div class="summary">
+        <p>💡 聪明的你现在已经学会如何使用线程优化模块，并举一反三优化你的应用与游戏了</p>
+    </div>
+    <h2>资源下载</h2>
+    <div class="download">
+        <strong>Magisk模块下载：</strong><br>
+        <a href="https://hito.lanzouo.com/b0cm2g3hi" target="_blank" class="warning">蓝奏云下载地址</a><br>
+        密码：<span class="warning">suto</span>
+    </div>
+</body>
+</html>
