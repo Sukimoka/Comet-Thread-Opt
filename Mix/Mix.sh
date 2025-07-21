@@ -427,6 +427,18 @@ com.kurogame.mingchao{RHIThread}=$(format_cpu_ranges "$p_core")
 com.kurogame.mingchao{RenderThread 1}=$(format_cpu_ranges "$p_core")
 com.kurogame.mingchao{NativeThread}=$(format_cpu_ranges "$p_core")
 com.kurogame.mingchao=$(format_cpu_ranges "$e_core $p_core")
+
+#CFM
+com.tencent.tmgp.cf{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.tencent.tmgp.cf{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.cf{Thread-*}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.cf=$(format_cpu_ranges "$e_core $p_core")
+
+#火影忍者
+com.tencent.KiHan{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.tencent.KiHan{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
+com.tencent.KiHan{Job.Worker*}=$(format_cpu_ranges "$p_core")
+com.tencent.KiHan=$(format_cpu_ranges "$e_core $p_core")
 "
 
 echo "$common_rules" >> $MODPATH/applist.conf
