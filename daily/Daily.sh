@@ -316,11 +316,26 @@ com.twitter.android{twitter.android}=$(format_cpu_ranges "$p_core")
 com.twitter.android{binder*}=$(format_cpu_ranges "$p_core") 
 com.twitter.android=$(format_cpu_ranges "$e_core $p_core")
 
+#抖音
+com.ss.android.ugc.aweme{RenderThread}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{HeapTaskDaemon}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{danmaku-driver}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{VDecod2-*}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{droid.ugc.aweme}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{#pty-wqp-*}=2-4
+com.ss.android.ugc.aweme=$(format_cpu_ranges "$e_core $p_core")
+
 # 快手
 com.smile.gifmaker{RenderThread}=$(format_cpu_ranges "$p_core") 
 com.smile.gifmaker{smile.gifmaker}=$(format_cpu_ranges "$p_core") 
 com.smile.gifmaker{MediaCodec_*}=$(format_cpu_ranges "$p_core") 
 com.smile.gifmaker=$(format_cpu_ranges "$e_core $p_core")
+
+#piliplus
+com.example.piliplus{1.raster}=$(format_cpu_ranges "$p_core")
+com.example.piliplus{Thread-*}=$(format_cpu_ranges "$p_core")
+com.example.piliplus{1.ui}=$(format_cpu_ranges "$p_core")
+com.example.piliplus=$(format_cpu_ranges "$e_core $p_core")
 
 # 网易云音乐
 com.netease.cloudmusic{RenderThread}=$(format_cpu_ranges "$p_core") 
