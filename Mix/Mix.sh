@@ -415,11 +415,11 @@ com.hypergryph.arknights{Audio*}=$(format_cpu_ranges "$e_core $p_core")
 com.hypergryph.arknights=$(format_cpu_ranges "$pme_core $p_core")
 
 # 原神
-com.miHoYo.Yuanshen{UnityMain*}=7
-com.miHoYo.Yuanshen{UnityGfx*}=2-4
-com.miHoYo.Yuanshen{Thread-*}=2-4
-com.miHoYo.Yuanshen{Job.worker*}=2-4
-com.miHoYo.Yuanshen=$(format_cpu_ranges "$p_core $hp_core")
+com.miHoYo.Yuanshen{UnityMain*}=$(format_cpu_ranges "$hp_core")
+com.miHoYo.Yuanshen{UnityGfx*}=$(format_cpu_ranges "$p_core")
+com.miHoYo.Yuanshen{Thread-*}=$(format_cpu_ranges "$p_core")
+com.miHoYo.Yuanshen{Job.worker*}=$(format_cpu_ranges "$p_core")
+com.miHoYo.Yuanshen=$(format_cpu_ranges "$e_core $p_core")
 
 # 崩坏:星穹铁道
 com.miHoYo.hkrpg{UnityMain*}=$(format_cpu_ranges "$hp_core")
@@ -457,24 +457,24 @@ com.tencent.KiHan=$(format_cpu_ranges "$e_core $p_core")
 
 #三角洲行动
 com.tencent.tmgp.dfm{RenderThread}=$(format_cpu_ranges "$hp_core")
-com.tencent.tmgp.dfm{GameThread}=(format_cpu_ranges "$p_core")
-com.tencent.tmgp.dfm{Thread-*}=(format_cpu_ranges "$p_core")
-com.tencent.tmgp.dfm{TaskGraphNP*}=(format_cpu_ranges "$p_core")
-com.tencent.tmgp.dfm{NativeThread}=(format_cpu_ranges "$p_core")
-com.tencent.tmgp.dfm=(format_cpu_ranges "$e_core $p_core")
+com.tencent.tmgp.dfm{GameThread}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.dfm{Thread-*}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.dfm{TaskGraphNP*}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.dfm{NativeThread}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.dfm=$(format_cpu_ranges "$e_core $p_core")
 
 #妮姬：新的希望
-com.tencent.nikke{UnityMain}=(format_cpu_ranges "$hp_core")
-com.tencent.nikke{Thread-*}=(format_cpu_ranges "$p_core")
-com.tencent.nikke{UnityChoreograp}=(format_cpu_ranges "$p_core")
-com.tencent.nikke=(format_cpu_ranges "$e_core $p_core")
+com.tencent.nikke{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.tencent.nikke{Thread-*}=$(format_cpu_ranges "$p_core")
+com.tencent.nikke{UnityChoreograp}=$(format_cpu_ranges "$p_core")
+com.tencent.nikke=$(format_cpu_ranges "$e_core $p_core")
 "
 
 echo "$common_rules" >> $MODPATH/applist.conf
 echo "$game_rules" >> $MODPATH/applist.conf
 if [ -f /data/adb/modules/AppOpt/applist.conf ]; then
-	mv $MODPATH/applist.conf $MODPATH/applist.conf.bak
-	cp -r /data/adb/modules/AppOpt/applist.conf $MODPATH
+	cp -af /data/adb/modules/AppOpt/applist.conf $MODPATH/applist.conf.bak
+ cp -af $MODPATH/applist.conf /data/adb/modules/AppOpt/applist.conf
 fi
 }
 check_magisk_version
