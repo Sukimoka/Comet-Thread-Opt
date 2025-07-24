@@ -283,6 +283,16 @@ com.sankuai.meituan{sankuai.meituan}=$(format_cpu_ranges "$p_core")
 com.sankuai.meituan{TTE-keyAgreemen}=$(format_cpu_ranges "$p_core") 
 com.sankuai.meituan=$(format_cpu_ranges "$e_core $p_core")
 
+# 饿了么
+me.ele{HeapTaskDaemon}=$(format_cpu_ranges "$p_core")
+me.ele{me.ele}=$(format_cpu_ranges "$p_core")
+me.ele{RenderThread}=$(format_cpu_ranges "$p_core")
+me.ele{ODCP*}=$(format_cpu_ranges "$
+$p_core")
+me.ele{LWalle*}=$(format_cpu_ranges "$p_core")
+me.ele{ReferenceQueueD}=$(format_cpu_ranges "$p_core")
+me.ele=$(format_cpu_ranges "$e_core $p_core")
+
 # 支付宝
 com.eg.android.AlipayGphone=$(format_cpu_ranges "$e_core $p_core")
 com.eg.android.AlipayGphone{crv-worker-thre}=$(format_cpu_ranges "$p_core") 
@@ -315,6 +325,14 @@ com.twitter.android{RenderThread}=$(format_cpu_ranges "$p_core")
 com.twitter.android{twitter.android}=$(format_cpu_ranges "$p_core") 
 com.twitter.android{binder*}=$(format_cpu_ranges "$p_core") 
 com.twitter.android=$(format_cpu_ranges "$e_core $p_core")
+
+# 爱奇艺
+com.qiyi.video{PLAYER_INFLATE_}=$(format_cpu_ranges "$p_core")
+com.qiyi.video{RenderThread}=$(format_cpu_ranges "$p_core")
+com.qiyi.video{DanmakuGLThread}=$(format_cpu_ranges "$p_core")
+com.qiyi.video{com.qiyi.video}=$(format_cpu_ranges "$p_core")
+com.qiyi.video{PumaPlyrVEgn}=$(format_cpu_ranges "$p_core")
+com.qiyi.video=$(format_cpu_ranges "$e_core $p_core")
 
 #抖音
 com.ss.android.ugc.aweme{RenderThread}=$(format_cpu_ranges "$p_core")
