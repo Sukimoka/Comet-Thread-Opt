@@ -379,8 +379,8 @@ com.android.systemui{ndroid.systemui}=$(format_cpu_ranges "$p_core $hp_core")
 echo "$common_rules" >> $MODPATH/applist.conf
 echo "$game_rules" >> $MODPATH/applist.conf
 if [ -f /data/adb/modules/AppOpt/applist.conf ]; then
-	mv $MODPATH/applist.conf $MODPATH/applist.conf.bak
-	cp -r /data/adb/modules/AppOpt/applist.conf $MODPATH
+	cp -af /data/adb/modules/AppOpt/applist.conf $MODPATH/applist.conf.bak
+ cp -af $MODPATH/applist.conf /data/adb/modules/AppOpt/applist.conf
 fi
 }
 check_magisk_version
