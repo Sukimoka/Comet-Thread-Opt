@@ -2,7 +2,8 @@
 基于SutoLiu的[AppOpt](https://gitee.com/sutoliu/AppOpt)                                             
 测试设备:OnePlus12 8G3                            
 
-# 更新说明                                     
+# 更新说明                                            
+仅在酷安云盘中更新，不再更新Github发行版                                     
 QU:快速更新-----仅更新底包                       
 RU:常规更新-----添加线程等                     
 daily:仅日常使用app线程                           
