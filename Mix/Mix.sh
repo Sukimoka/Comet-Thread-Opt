@@ -283,6 +283,12 @@ com.sankuai.meituan{sankuai.meituan}=$(format_cpu_ranges "$p_core")
 com.sankuai.meituan{TTE-keyAgreemen}=$(format_cpu_ranges "$p_core") 
 com.sankuai.meituan=$(format_cpu_ranges "$e_core $p_core")
 
+# 美团外卖
+com.sankuai.meituan.takeoutnew{RenderThread}=$(format_cpu_ranges "$hp_core") 
+com.sankuai.meituan.takeoutnew{tuan.takeoutnew}=$(format_cpu_ranges "$p_core") 
+com.sankuai.meituan.takeoutnew{J*}=$(format_cpu_ranges "$p_core") 
+com.sankuai.meituan.takeoutnew=$(format_cpu_ranges "$e_core $p_core")
+
 # 饿了么
 me.ele{HeapTaskDaemon}=$(format_cpu_ranges "$p_core")
 me.ele{me.ele}=$(format_cpu_ranges "$p_core")
