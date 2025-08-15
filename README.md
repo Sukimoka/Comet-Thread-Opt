@@ -3,7 +3,7 @@
 测试设备:OnePlus12 8G3                            
 
 # 更新说明                                            
-仅在酷安云盘中更新，不再更新Github发行版                                     
+仅在酷安云盘,Telegram中更新，不再更新Github发行版                                     
 QU:快速更新-----仅更新底包                       
 RU:常规更新-----添加线程等                     
 daily:仅日常使用app线程                           
@@ -14,6 +14,6 @@ Mix：包含游戏和daily线程
 # 其他事项
 SutoLiu的酷安[SutoLiu](http://www.coolapk.com/u/1842370)                                    
 作者主页[风凌惜桜](http://www.coolapk.com/u/27195819)                  
-[Telegram](https://t.me/RealSimokio)         
+       [Telegram](https://t.me/RealSimokio)         
 适配请提交issue,附带游戏内实时线程，scene帧率记录,游戏或应用包名                                    
 如有更好的线程欢迎提交Pr                       
