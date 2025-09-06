@@ -187,7 +187,7 @@ surfaceflinger{RenderEngine}=$(format_cpu_ranges "$p_core hp_core")
 surfaceflinger=$(format_cpu_ranges "$e_core $p_core hp_core")
 
 # 将 '系统界面' 渲染引擎线程与主线程绑定到中大核
-com.android.systemui{RenderThread}=7
+com.android.systemui{RenderThread}=$(format_cpu_ranges "$hp_core")
 com.android.systemui{ndroid.systemui}=$(format_cpu_ranges "$p_core hp_core")
 
 # 将QQ音乐主进程绑定0,1,5
