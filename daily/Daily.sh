@@ -90,7 +90,7 @@ com.eg.android.AlipayGphone{RenderThread}=$(format_cpu_ranges "$p_core")
 com.eg.android.AlipayGphone=$(format_cpu_ranges "$e_core $p_core")
 
 # 美团外卖
-com.sankuai.meituan.takeoutnew{RenderThread}=7
+com.sankuai.meituan.takeoutnew{RenderThread}=$(format_cpu_ranges "$e_core $p_core hp_core")
 com.sankuai.meituan.takeoutnew{tuan.takeoutnew}=$(format_cpu_ranges "$p_core")
 com.sankuai.meituan.takeoutnew{J*}=$(format_cpu_ranges "$p_core")
 com.sankuai.meituan.takeoutnew=$(format_cpu_ranges "$e_core $p_core")
@@ -158,7 +158,7 @@ com.netease.cloudmusic{LooperTracer}
 com.netease.cloudmusic=$(format_cpu_ranges "$e_core $p_core")
 
 # Lanerc
-com.xuzly.hy.lanerc.app{1.ui}=7
+com.xuzly.hy.lanerc.app{1.ui}=$(format_cpu_ranges "$e_core $p_core hp_core")
 com.xuzly.hy.lanerc.app{mpv/demux}=$(format_cpu_ranges "$p_core")
 com.xuzly.hy.lanerc.app{1.raster}=$(format_cpu_ranges "$p_core")
 com.xuzly.hy.lanerc.app{Thread-*}=$(format_cpu_ranges "$p_core")
@@ -181,27 +181,27 @@ com.baidu.BaiduMap=$(format_cpu_ranges "$e_core $p_core")
 
 #工具性
 # 将 'Android图形显示组件'渲染引擎线程绑定到大核
-surfaceflinger{RenderEngine}=7
+surfaceflinger{RenderEngine}=$(format_cpu_ranges "$p_core hp_core")
 
 # 允许 'Android图形显示组件' 使用所有CPU核心$all_core
-surfaceflinger=0-7
+surfaceflinger=$(format_cpu_ranges "$e_core $p_core hp_core")
 
 # 将 '系统界面' 渲染引擎线程与主线程绑定到中大核
 com.android.systemui{RenderThread}=7
-com.android.systemui{ndroid.systemui}=$(format_cpu_ranges "$p_core"),7
+com.android.systemui{ndroid.systemui}=$(format_cpu_ranges "$p_core hp_core")
 
 # 将QQ音乐主进程绑定0,1,5
-com.tencent.qqmusic=0-1,5
+com.tencent.qqmusic=$(format_cpu_ranges "$e_core $p_core")
 
 # 将微信输入法进程绑定0,1,5
-com.tencent.wetype:play=0-1,5
+com.tencent.wetype:play=$(format_cpu_ranges "$e_core $p_core")
 
 # 将酷狗音乐后台播放的子进程绑定0,1,5
-com.kugou.android.support=0-1,5
-com.kugou.android.message=0-1,5
+com.kugou.android.support=$(format_cpu_ranges "$e_core $p_core")
+com.kugou.android.message=$(format_cpu_ranges "$e_core $p_core")
 
 # 将微信Push消息推送进程绑定0,1,5
-com.tencent.mm:push=0-1,5
+com.tencent.mm:push=$(format_cpu_ranges "$e_core $p_core")
 
 # 系统桌面
 com.android.launcher{RenderThread}=$(format_cpu_ranges "$p_core")
@@ -222,7 +222,7 @@ com.android.launcher3{binder*}=$(format_cpu_ranges "$p_core")
 com.android.launcher3=$(format_cpu_ranges "$e_core $p_core")
 
 # 3Dmark
-com.futuremark.dmandroid.application{Thread-??}=7
+com.futuremark.dmandroid.application{Thread-??}=$(format_cpu_ranges "$hp_core")
 com.futuremark.dmandroid.application{*binder}=$(format_cpu_ranges "$p_core")
 com.futuremark.dmandroid.application=$(format_cpu_ranges "$e_core $p_core")
 
