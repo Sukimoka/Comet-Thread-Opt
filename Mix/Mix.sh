@@ -145,16 +145,16 @@ com.qiyi.video=$(format_cpu_ranges "$e_core $p_core")
 # 抖音 
 com.ss.android.ugc.aweme{*Thread}=$(format_cpu_ranges "$p_core")
 com.ss.android.ugc.aweme{VDecod2-*}=$(format_cpu_ranges "$p_core")
-com.ss.android.ugc.aweme{HeapTaskDaemon}=5-6
-com.ss.android.ugc.aweme{danmaku-driver}=5-6
-com.ss.android.ugc.aweme{droid.ugc.aweme}=5-6
-com.ss.android.ugc.aweme{#pty-wqp-*}=5-6
+com.ss.android.ugc.aweme{HeapTaskDaemon}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{danmaku-driver}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{droid.ugc.aweme}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{#pty-wqp-*}=$(format_cpu_ranges "$p_core")
 com.ss.android.ugc.aweme=$(format_cpu_ranges "$e_core $p_core")
 
 # 网易云音乐
 com.netease.cloudmusic{RenderThread}=$(format_cpu_ranges "$p_core")
 com.netease.cloudmusic{ease.cloudmusic}=$(format_cpu_ranges "$p_core")
-com.netease.cloudmusic{LooperTracer}
+com.netease.cloudmusic{LooperTracer}=$(format_cpu_ranges "$p_core")
 com.netease.cloudmusic=$(format_cpu_ranges "$e_core $p_core")
 
 # Lanerc
@@ -177,7 +177,7 @@ com.baidu.BaiduMap{31.1_0223536945}=$(format_cpu_ranges "$p_core")
 com.baidu.BaiduMap{.31.1_062565145}=$(format_cpu_ranges "$p_core") 
 com.baidu.BaiduMap{.baidu.BaiduMap}=$(format_cpu_ranges "$p_core") 
 com.baidu.BaiduMap{*Thread}=$(format_cpu_ranges "$p_core") 
-com.baidu.BaiduMap=$(format_cpu_ranges "$e_core $p_core")
+com.baidu.BaiduMap=$all_core
 
 #工具性
 # 将 'Android图形显示组件'渲染引擎线程绑定到大核
@@ -351,4 +351,3 @@ com.Sunborn.SnqxExilium{Job.[Ww]orker*}=$(format_cpu_ranges "$p_core")
 com.Sunborn.SnqxExilium{Thread-*}=$(format_cpu_ranges "$p_core")
 com.Sunborn.SnqxExilium=$(format_cpu_ranges "$e_core $p_core")
 "
-
