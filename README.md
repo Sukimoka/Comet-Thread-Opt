@@ -3,11 +3,12 @@
 测试设备:OnePlus12 8G3                            
 
 # 更新说明                                            
-仅在酷安云盘,Telegram中更新，不再更新Github发行版                                     
-QU:快速更新-----仅更新底包                       
-RU:常规更新-----添加线程等                     
-daily:仅日常使用app线程                           
-Mix：包含游戏和daily线程                                           
+仅在酷安云盘,Telegram中更新，不再更新Github发行版                                                                                     
+酷安链接[Click](https://www.coolapk.com/feed/67093275?s=NjFlZDBiZWQxOWVmOWFiZzY4YmNlNzZiega1540)                          
+                                                
+Daily:仅日常使用app线程                                                      
+Mix：包含游戏和daily线程                           
+Common：通用版，理论可用于所有架构的SOC，不保证使用效果                                                                                                                            
 线程分为:云适配--未经测试                         
         适配----经测试
 
