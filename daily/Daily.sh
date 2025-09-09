@@ -122,6 +122,16 @@ com.sina.weibo{RenderThread}=$(format_cpu_ranges "$p_core")
 com.sina.weibo{Thread-*}=$(format_cpu_ranges "$p_core")
 com.sina.weibo=$(format_cpu_ranges "$e_core $p_core")
 
+# 贴吧
+com.baidu.tieba{RenderThread}=$(format_cpu_ranges "$p_core")
+com.baidu.tieba{com.baidu.tieba}=$(format_cpu_ranges "$p_core")
+com.baidu.tieba=$(format_cpu_ranges "$e_core $p_core")
+
+# 知乎
+com.zhihu.android{RenderThread}=$(format_cpu_ranges "$p_core")
+com.zhihu.android{m.zhihu.android}=$(format_cpu_ranges "$p_core")
+com.zhihu.android=$(format_cpu_ranges "$e_core $p_core")
+
 # X
 com.twitter.android{RenderThread}=$(format_cpu_ranges "$p_core")
 com.twitter.android{twitter.android}=$(format_cpu_ranges "$p_core")
