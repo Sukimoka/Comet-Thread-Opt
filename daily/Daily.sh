@@ -14,6 +14,12 @@ com.tencent.mobileqq{RenderThread}=$(format_cpu_ranges "$p_core")
 com.tencent.mobileqq{MediaCodec_loop}=$(format_cpu_ranges "$p_core")
 com.tencent.mobileqq=$(format_cpu_ranges "$e_core $p_core")
 
+# TIM
+com.tencent.tim{com.tencent.tim}=$(format_cpu_ranges "$p_core")
+com.tencent.tim{RenderThread}=$(format_cpu_ranges "$p_core")
+com.tencent.tim{HeapTaskDaemon}=$(format_cpu_ranges "$p_core")
+com.tencent.tim=$(format_cpu_ranges "$e_core $p_core")
+
 # Nekogram
 tw.nekomimi.nekogram{files_database_}=$(format_cpu_ranges "$p_core")
 tw.nekomimi.nekogram{searchQueue}=$(format_cpu_ranges "$p_core")
@@ -102,6 +108,12 @@ tv.danmaku.bili{RenderThread}=$(format_cpu_ranges "$p_core")
 tv.danmaku.bili{Thread-*}=$(format_cpu_ranges "$p_core")
 tv.danmaku.bili{IJK_External_Re}=$(format_cpu_ranges "$p_core")
 tv.danmaku.bili=$(format_cpu_ranges "$e_core $p_core")
+
+# 哔哩哔哩Play
+com.bilibili.app.in{RenderThread}=$(format_cpu_ranges "$p_core")
+com.bilibili.app.in{*.app.in}=$(format_cpu_ranges "$p_core")
+tv.danmaku.bili{Thread-*}=$(format_cpu_ranges "$p_core")
+com.bilibili.app.in=$(format_cpu_ranges "$e_core $p_core")
 
 #piliplus
 com.example.piliplus{1.raster}=$(format_cpu_ranges "$p_core")
