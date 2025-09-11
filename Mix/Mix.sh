@@ -14,6 +14,12 @@ com.tencent.mobileqq{RenderThread}=$(format_cpu_ranges "$p_core")
 com.tencent.mobileqq{MediaCodec_loop}=$(format_cpu_ranges "$p_core")
 com.tencent.mobileqq=$(format_cpu_ranges "$e_core $p_core")
 
+# TIM
+com.tencent.tim{com.tencent.tim}=$(format_cpu_ranges "$p_core")
+com.tencent.tim{RenderThread}=$(format_cpu_ranges "$p_core")
+com.tencent.tim{HeapTaskDaemon}=$(format_cpu_ranges "$p_core")
+com.tencent.tim=$(format_cpu_ranges "$e_core $p_core")
+
 # Nekogram
 tw.nekomimi.nekogram{files_database_}=$(format_cpu_ranges "$p_core")
 tw.nekomimi.nekogram{searchQueue}=$(format_cpu_ranges "$p_core")
@@ -102,6 +108,12 @@ tv.danmaku.bili{RenderThread}=$(format_cpu_ranges "$p_core")
 tv.danmaku.bili{Thread-*}=$(format_cpu_ranges "$p_core")
 tv.danmaku.bili{IJK_External_Re}=$(format_cpu_ranges "$p_core")
 tv.danmaku.bili=$(format_cpu_ranges "$e_core $p_core")
+
+# 哔哩哔哩Play
+com.bilibili.app.in{RenderThread}=$(format_cpu_ranges "$p_core")
+com.bilibili.app.in{*.app.in}=$(format_cpu_ranges "$p_core")
+tv.danmaku.bili{Thread-*}=$(format_cpu_ranges "$p_core")
+com.bilibili.app.in=$(format_cpu_ranges "$e_core $p_core")
 
 #piliplus
 com.example.piliplus{1.raster}=$(format_cpu_ranges "$p_core")
@@ -257,6 +269,13 @@ com.tencent.tmgp.pubgmhd{RHIThread}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.pubgmhd{RenderThread*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.pubgmhd=$(format_cpu_ranges "$e_core $p_core")
 
+# PUBGM GLO
+com.tencent.ig{RenderThread*}=$(format_cpu_ranges "$hp_core")
+com.tencent.ig{UEGameThread}=$(format_cpu_ranges "$p_core")
+com.tencent.ig{NativeThread}=$(format_cpu_ranges "$p_core")
+com.tencent.ig{TaskGraphNP*}=$(format_cpu_ranges "$p_core")
+com.tencent.ig=$(format_cpu_ranges "$e_core $p_core")
+
 # 使命召唤手游
 com.tencent.tmgp.cod{UnityMain*}=$(format_cpu_ranges "$hp_core")
 com.tencent.tmgp.cod{UnityGfx*}=$(format_cpu_ranges "$p_core")
@@ -335,6 +354,13 @@ com.tencent.nikke{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.tencent.nikke{Thread-*}=$(format_cpu_ranges "$p_core")
 com.tencent.nikke{UnityChoreograp}=$(format_cpu_ranges "$p_core")
 com.tencent.nikke=$(format_cpu_ranges "$e_core $p_core")
+
+# NIKKE
+com.gamamobi.nikke{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.gamamobi.nikke{Thread-*}=$(format_cpu_ranges "$p_core")
+com.gamamobi.nikke{UnityChoreograp}=$(format_cpu_ranges "$p_core")
+com.gamamobi.nikke{FMOD*}=$(format_cpu_ranges "$p_core")
+com.gamamobi.nikke=$(format_cpu_ranges "$e_core $p_core")
 
 # 荒野乱斗
 com.tencent.tmgp.supercell.brawlstars{Mainloop}=$(format_cpu_ranges "$hp_core")
