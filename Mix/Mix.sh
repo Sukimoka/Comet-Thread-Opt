@@ -476,19 +476,18 @@ com.Sunborn.SnqxExilium{Job.[Ww]orker*}=$(format_cpu_ranges "$p_core")
 com.Sunborn.SnqxExilium{Thread-*}=$(format_cpu_ranges "$p_core")
 com.Sunborn.SnqxExilium=$(format_cpu_ranges "$e_core $p_core")
 
-# DNF
-com.tencent.tmgp.dnf{UnityMain}=$(format_cpu_ranges "$hp_core")
-com.tencent.tmgp.dnf{Thread-[0-9]*}=$(format_cpu_ranges "$p_core")
-com.tencent.tmgp.dnf{UnityChoreograp}=$(format_cpu_ranges "$p_core")
-com.tencent.tmgp.dnf{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
-com.tencent.tmgp.dnf=$(format_cpu_ranges "$e_core $p_core")
-
 # 英雄联盟
 com.tencent.lolm{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.tencent.lolm{LogicThread}=$(format_cpu_ranges "$p_core")
 com.tencent.lolm{Thread-*}=$(format_cpu_ranges "$p_core")
 com.tencent.lolm{NativeThread}=$(format_cpu_ranges "$p_core")
 com.tencent.lolm=$(format_cpu_ranges "$e_core $p_core")
+
+# 金铲铲之战
+com.tencent.jkchess{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.tencent.jkchess{Thread-*}=$(format_cpu_ranges "$p_core")
+com.tencent.jkchess{LogicThread}=$(format_cpu_ranges "$p_core")
+com.tencent.jkchess=$(format_cpu_ranges "$e_core $p_core")
 
 # DNF
 com.tencent.tmgp.dnf{UnityMain}=$(format_cpu_ranges "$hp_core")
