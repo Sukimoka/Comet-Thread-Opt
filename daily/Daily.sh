@@ -14,6 +14,12 @@ com.tencent.mobileqq{MediaCodec_loop}=$(format_cpu_ranges "$e_core $p_core")
 com.tencent.mobileqq{encent.mobileqq}=$(format_cpu_ranges "$p_core")
 com.tencent.mobileqq=$(format_cpu_ranges "$p_core")
 
+# TIM
+com.tencent.tim{com.tencent.tim}=$(format_cpu_ranges "$p_core")
+com.tencent.tim{RenderThread}=$(format_cpu_ranges "$p_core")
+com.tencent.tim{HeapTaskDaemon}=$(format_cpu_ranges "$p_core")
+com.tencent.tim=$(format_cpu_ranges "$p_core")
+
 # Nekogram
 tw.nekomimi.nekogram{RehderThread}=$(format_cpu_ranges "$e_core $p_core")
 tw.nekomimi.nekogram{files_database_}=$(format_cpu_ranges "$p_core")
@@ -117,6 +123,29 @@ com.example.piliplus{Thread-*}=$(format_cpu_ranges "$e_core $p_core")
 com.example.piliplus{1.raster}=$(format_cpu_ranges "$p_core")
 com.example.piliplus{1.ui}=$(format_cpu_ranges "$p_core")
 com.example.piliplus=$(format_cpu_ranges "$p_core")
+
+# 快手
+com.smile.gifmaker{RenderThread}=$(format_cpu_ranges "$p_core")
+com.smile.gifmaker{smile.gifmaker}=$(format_cpu_ranges "$p_core")
+com.smile.gifmaker{MediaCodec_*}=$(format_cpu_ranges "$p_core")
+com.smile.gifmaker=$(format_cpu_ranges "$p_core")
+
+# 爱奇艺
+com.qiyi.video{PLAYER_INFLATE_}=$(format_cpu_ranges "$p_core")
+com.qiyi.video{RenderThread}=$(format_cpu_ranges "$p_core")
+com.qiyi.video{DanmakuGLThread}=$(format_cpu_ranges "$p_core")
+com.qiyi.video{com.qiyi.video}=$(format_cpu_ranges "$p_core")
+com.qiyi.video{PumaPlyrVEgn}=$(format_cpu_ranges "$p_core")
+com.qiyi.video=$(format_cpu_ranges "$p_core")
+
+# 抖音 
+com.ss.android.ugc.aweme{*Thread}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{VDecod2-*}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{HeapTaskDaemon}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{danmaku-driver}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{droid.ugc.aweme}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme{#pty-wqp-*}=$(format_cpu_ranges "$p_core")
+com.ss.android.ugc.aweme=$(format_cpu_ranges "$p_core")
 
 # 酷安
 com.coolapk.market{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
