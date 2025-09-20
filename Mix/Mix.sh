@@ -381,14 +381,6 @@ com.tencent.tmgp.cod{Job.worker*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.cod{Audio*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.cod=$(format_cpu_ranges "$e_core $p_core")
 
-# 英雄联盟手游
-com.tencent.lolm{UnityMain}=$(format_cpu_ranges "$hp_core")
-com.tencent.lolm{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
-com.tencent.lolm{AILocalThread}=$(format_cpu_ranges "$p_core")
-com.tencent.lolm{Thread-*}=$(format_cpu_ranges "$p_core")
-com.tencent.lolm{Job.worker*}=$(format_cpu_ranges "$p_core")
-com.tencent.lolm=$(format_cpu_ranges "$e_core $p_core")
-
 # 明日方舟
 com.hypergryph.arknights{UnityMain*}=$(format_cpu_ranges "$hp_core")
 com.hypergryph.arknights{UnityGfx*}=$(format_cpu_ranges "$p_core")
@@ -490,4 +482,36 @@ com.tencent.tmgp.dnf{Thread-[0-9]*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.dnf{UnityChoreograp}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.dnf{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.dnf=$(format_cpu_ranges "$e_core $p_core")
+
+# 英雄联盟
+com.tencent.lolm{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.tencent.lolm{LogicThread}=$(format_cpu_ranges "$p_core")
+com.tencent.lolm{Thread-*}=$(format_cpu_ranges "$p_core")
+com.tencent.lolm{NativeThread}=$(format_cpu_ranges "$p_core")
+com.tencent.lolm=$(format_cpu_ranges "$e_core $p_core")
+
+# DNF
+com.tencent.tmgp.dnf{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.tencent.tmgp.dnf{Thread-[0-9]*}=$(format_cpu_ranges "$e_core $p_core")
+com.tencent.tmgp.dnf{UnityChoreograp}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.dnf{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.dnf=$(format_cpu_ranges "$e_core $p_core")
+
+# 皇室战争
+com.tencent.tmgp.supercell.clashroyale{Mainloop}=$(format_cpu_ranges "$hp_core")
+com.tencent.tmgp.supercell.clashroyale{Thread-*}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.supercell.clashroyale{FMOD mixer thre}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.supercell.clashroyale=$(format_cpu_ranges "$e_core $p_core")
+
+# 荒野乱斗
+com.tencent.tmgp.supercell.brawlstars{Mainloop}=$(format_cpu_ranges "$hp_core")
+com.tencent.tmgp.supercell.brawlstars{FMOD mixer thre}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.supercell.brawlstars{Thread-*}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.supercell.brawlstars=$(format_cpu_ranges "$e_core $p_core")
+
+# 尘白禁区
+com.dragonli.projectsnow.lhm{RHIThread}=$(format_cpu_ranges "$hp_core")
+com.dragonli.projectsnow.lhm{RenderThread*}=$(format_cpu_ranges "$p_core")
+com.dragonli.projectsnow.lhm{GameThread}=$(format_cpu_ranges "$p_core")
+com.dragonli.projectsnow.lhm=$(format_cpu_ranges "$e_core $p_core")
 "
