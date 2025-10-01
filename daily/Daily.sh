@@ -39,6 +39,13 @@ nu.gpu.nagram{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
 nu.gpu.nagram{nu.gpu.nagram}=$(format_cpu_ranges "$p_core")
 nu.gpu.nagram=$(format_cpu_ranges "$p_core")
 
+# Ayugram
+com.radolyn.ayugram{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
+com.radolyn.ayugram{radolyn.ayugram}=$(format_cpu_ranges "$p_core")
+com.radolyn.ayugram{SpoilerEffectBi}=$(format_cpu_ranges "$p_core")
+com.radolyn.ayugram{Thread-*}=$(format_cpu_ranges "$e_core $p_core")
+com.radolyn.ayugram=$(format_cpu_ranges "$p_core")
+
 # 钉钉
 com.alibaba.android.rimet{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
 com.alibaba.android.rimet{a.android.rimet}=$(format_cpu_ranges "$p_core")
