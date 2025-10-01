@@ -39,6 +39,13 @@ nu.gpu.nagram{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
 nu.gpu.nagram{nu.gpu.nagram}=$(format_cpu_ranges "$p_core")
 nu.gpu.nagram=$(format_cpu_ranges "$p_core")
 
+# Ayugram
+com.radolyn.ayugram{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
+com.radolyn.ayugram{radolyn.ayugram}=$(format_cpu_ranges "$p_core")
+com.radolyn.ayugram{SpoilerEffectBi}=$(format_cpu_ranges "$p_core")
+com.radolyn.ayugram{Thread-*}=$(format_cpu_ranges "$e_core $p_core")
+com.radolyn.ayugram=$(format_cpu_ranges "$p_core")
+
 # 钉钉
 com.alibaba.android.rimet{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
 com.alibaba.android.rimet{a.android.rimet}=$(format_cpu_ranges "$p_core")
@@ -115,7 +122,7 @@ tv.danmaku.bili=$(format_cpu_ranges "$p_core")
 # 哔哩哔哩Play
 com.bilibili.app.in{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
 com.bilibili.app.in{*.app.in}=$(format_cpu_ranges "$e_core $p_core")
-com.bilibili.app.in{Thread-*}=$(format_cpu_ranges "$e_core $p_core")
+tv.danmaku.bili{Thread-*}=$(format_cpu_ranges "$e_core $p_core")
 com.bilibili.app.in=$(format_cpu_ranges "$p_core")
 
 # piliplus
@@ -180,7 +187,7 @@ com.twitter.android=$(format_cpu_ranges "$p_core")
 com.google.android.youtube{android.youtube}=$(format_cpu_ranges "$p_core")
 com.google.android.youtube{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
 com.google.android.youtube{ExoPlayer:Playb}=$(format_cpu_ranges "$e_core $p_core")
-com.google.android.youtube{MediaCodec_loop}=$(format_cpu_ranges "$e_core $p_core")
+com.google.android.youtube{MediaCodec loop}=$(format_cpu_ranges "$e_core $p_core")
 com.google.android.youtube=$(format_cpu_ranges "$p_core")
 
 # Facebook
@@ -193,7 +200,7 @@ com.facebook.katana=$(format_cpu_ranges "$p_core")
 com.discord{com.discord}=$(format_cpu_ranges "$p_core")
 com.discord{pool-10-thread-*}=$(format_cpu_ranges "$e_core $p_core")
 com.discord{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
-com.discord{mqt_js}=$(format_cpu_ranges "$p_core")
+com.discord{mqt js}=$(format_cpu_ranges "$p_core")
 com.discord=$(format_cpu_ranges "$p_core")
 
 # Lanerc
@@ -476,6 +483,13 @@ com.Sunborn.SnqxExilium{Job.[Ww]orker*}=$(format_cpu_ranges "$p_core")
 com.Sunborn.SnqxExilium{Thread-*}=$(format_cpu_ranges "$p_core")
 com.Sunborn.SnqxExilium=$(format_cpu_ranges "$e_core $p_core")
 
+# DNF
+com.tencent.tmgp.dnf{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.tencent.tmgp.dnf{Thread-[0-9]*}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.dnf{UnityChoreograp}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.dnf{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.dnf=$(format_cpu_ranges "$e_core $p_core")
+
 # 英雄联盟
 com.tencent.lolm{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.tencent.lolm{LogicThread}=$(format_cpu_ranges "$p_core")
@@ -488,13 +502,6 @@ com.tencent.jkchess{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.tencent.jkchess{Thread-*}=$(format_cpu_ranges "$p_core")
 com.tencent.jkchess{LogicThread}=$(format_cpu_ranges "$p_core")
 com.tencent.jkchess=$(format_cpu_ranges "$e_core $p_core")
-
-# DNF
-com.tencent.tmgp.dnf{UnityMain}=$(format_cpu_ranges "$hp_core")
-com.tencent.tmgp.dnf{Thread-[0-9]*}=$(format_cpu_ranges "$e_core $p_core")
-com.tencent.tmgp.dnf{UnityChoreograp}=$(format_cpu_ranges "$p_core")
-com.tencent.tmgp.dnf{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
-com.tencent.tmgp.dnf=$(format_cpu_ranges "$e_core $p_core")
 
 # 皇室战争
 com.tencent.tmgp.supercell.clashroyale{Mainloop}=$(format_cpu_ranges "$hp_core")
@@ -513,4 +520,25 @@ com.dragonli.projectsnow.lhm{RHIThread}=$(format_cpu_ranges "$hp_core")
 com.dragonli.projectsnow.lhm{RenderThread*}=$(format_cpu_ranges "$p_core")
 com.dragonli.projectsnow.lhm{GameThread}=$(format_cpu_ranges "$p_core")
 com.dragonli.projectsnow.lhm=$(format_cpu_ranges "$e_core $p_core")
+
+# 极限竞速
+com.netease.race{RHIThread}=$(format_cpu_ranges "$hp_core")
+com.netease.race{GameThread}=$(format_cpu_ranges "$e_core $p_core")
+com.netease.race{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
+com.netease.race{Thread-*}=$(format_cpu_ranges "$p_core")
+com.netease.race=$(format_cpu_ranges "$e_core $p_core")
+
+# qq飞车
+com.tencent.tmgp.speedmobile{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.tencent.tmgp.speedmobile{Thread-*}=$(format_cpu_ranges "$e_core $p_core")
+com.tencent.tmgp.speedmobile{UnityGfxRenderS}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.speedmobile{Job.Worker*}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.speedmobile=$(format_cpu_ranges "$e_core $p_core")
+
+# 雀魂
+com.soulgamechst.majsoul{Thread-??}=$(format_cpu_ranges "$p_core")
+#垃圾线程
+com.soulgamechst.majsoul{UnityMain}=$(format_cpu_ranges "$e_core $p_core")
+com.soulgamechst.majsoul{Job.Worker*}=2$(format_cpu_ranges "$p_core")
+com.soulgamechst.majsoul=$(format_cpu_ranges "$e_core $p_core")
 "
