@@ -1,5 +1,6 @@
 "******************************************""
 common_rules="
+common_rules="
 #通讯
 # 微信
 com.tencent.mm{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
@@ -180,7 +181,7 @@ com.zhihu.android=$(format_cpu_ranges "$p_core")
 # X
 com.twitter.android{twitter.android}=$(format_cpu_ranges "$p_core")
 com.twitter.android{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
-com.twitter.android{MediaCodec loop}=$(format_cpu_ranges "$e_core $p_core")
+com.twitter.android{MediaCodec_loop}=$(format_cpu_ranges "$e_core $p_core")
 com.twitter.android=$(format_cpu_ranges "$p_core")
 
 # YouTube
@@ -306,16 +307,6 @@ cn.myflv.noactive{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
 cn.myflv.noactive=$(format_cpu_ranges "$p_core")
 
 #工具性
-# 将 'Android图形显示组件'渲染引擎线程绑定到大核
-surfaceflinger{RenderEngine}=$(format_cpu_ranges "$hp_core")
-
-# 允许 'Android图形显示组件' 使用所有CPU核心$all_core
-surfaceflinger=$all_core
-
-# 将 '系统界面' 渲染引擎线程与主线程绑定到中大核
-com.android.systemui{RenderThread}=$(format_cpu_ranges "$hp_core")
-com.android.systemui{ndroid.systemui}=$(format_cpu_ranges "$p_core $hp_core")
-
 # 将QQ音乐主进程绑定0,1,5
 com.tencent.qqmusic=$(format_cpu_ranges "$e_core $p_core")
 
