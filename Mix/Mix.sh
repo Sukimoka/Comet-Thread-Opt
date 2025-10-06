@@ -122,7 +122,7 @@ tv.danmaku.bili=$(format_cpu_ranges "$p_core")
 # 哔哩哔哩Play
 com.bilibili.app.in{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
 com.bilibili.app.in{*.app.in}=$(format_cpu_ranges "$e_core $p_core")
-tv.danmaku.bili{Thread-*}=$(format_cpu_ranges "$e_core $p_core")
+com.bilibili.app.in{Thread-*}=$(format_cpu_ranges "$e_core $p_core")
 com.bilibili.app.in=$(format_cpu_ranges "$p_core")
 
 # piliplus
@@ -180,14 +180,14 @@ com.zhihu.android=$(format_cpu_ranges "$p_core")
 # X
 com.twitter.android{twitter.android}=$(format_cpu_ranges "$p_core")
 com.twitter.android{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
-com.twitter.android{MediaCodec loop}=$(format_cpu_ranges "$e_core $p_core")
+com.twitter.android{MediaCodec_loop}=$(format_cpu_ranges "$e_core $p_core")
 com.twitter.android=$(format_cpu_ranges "$p_core")
 
 # YouTube
 com.google.android.youtube{android.youtube}=$(format_cpu_ranges "$p_core")
 com.google.android.youtube{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
 com.google.android.youtube{ExoPlayer:Playb}=$(format_cpu_ranges "$e_core $p_core")
-com.google.android.youtube{MediaCodec loop}=$(format_cpu_ranges "$e_core $p_core")
+com.google.android.youtube{MediaCodec_loop}=$(format_cpu_ranges "$e_core $p_core")
 com.google.android.youtube=$(format_cpu_ranges "$p_core")
 
 # Facebook
@@ -200,7 +200,7 @@ com.facebook.katana=$(format_cpu_ranges "$p_core")
 com.discord{com.discord}=$(format_cpu_ranges "$p_core")
 com.discord{pool-10-thread-*}=$(format_cpu_ranges "$e_core $p_core")
 com.discord{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
-com.discord{mqt js}=$(format_cpu_ranges "$p_core")
+com.discord{mqt_js}=$(format_cpu_ranges "$p_core")
 com.discord=$(format_cpu_ranges "$p_core")
 
 # Lanerc
@@ -306,16 +306,6 @@ cn.myflv.noactive{RenderThread}=$(format_cpu_ranges "$e_core $p_core")
 cn.myflv.noactive=$(format_cpu_ranges "$p_core")
 
 #工具性
-# 将 'Android图形显示组件'渲染引擎线程绑定到大核
-surfaceflinger{RenderEngine}=$(format_cpu_ranges "$hp_core")
-
-# 允许 'Android图形显示组件' 使用所有CPU核心$all_core
-surfaceflinger=$all_core
-
-# 将 '系统界面' 渲染引擎线程与主线程绑定到中大核
-com.android.systemui{RenderThread}=$(format_cpu_ranges "$hp_core")
-com.android.systemui{ndroid.systemui}=$(format_cpu_ranges "$p_core $hp_core")
-
 # 将QQ音乐主进程绑定0,1,5
 com.tencent.qqmusic=$(format_cpu_ranges "$e_core $p_core")
 
