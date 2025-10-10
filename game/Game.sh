@@ -183,4 +183,17 @@ com.soulgamechst.majsoul{Thread-??}=$(format_cpu_ranges "$p_core")
 com.soulgamechst.majsoul{UnityMain}=$(format_cpu_ranges "$e_core $p_core")
 com.soulgamechst.majsoul{Job.Worker*}=2$(format_cpu_ranges "$p_core")
 com.soulgamechst.majsoul=$(format_cpu_ranges "$e_core $p_core")
+
+# 崩坏3(官服)
+com.miHoYo.enterprise.NGHSoD{UnityMain}=(format_cpu_ranges "$hp_core")
+com.miHoYo.enterprise.NGHSoD{UnityGfxDeviceW}=(format_cpu_ranges "$p_core")
+com.miHoYo.enterprise.NGHSoD{NativeThread}=(format_cpu_ranges "$p_core")
+com.miHoYo.enterprise.NGHSoD=(format_cpu_ranges "$e_core $p_core")
+
+# 多乐够级(HW)
+com.k7k7.goujihd.huawei{GLThread*}=(format_cpu_ranges "$hp_core")
+com.k7k7.goujihd.huawei{AudioTrack}=(format_cpu_ranges "$p_core")
+com.k7k7.goujihd.huawei{binder*}=(format_cpu_ranges "$p_core")
+com.k7k7.goujihd.huawei{Thread*}=(format_cpu_ranges "$p_core")
+com.k7k7.goujihd.huawei=(format_cpu_ranges "$e_core $p_core")
 "
