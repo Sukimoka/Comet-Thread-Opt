@@ -6,20 +6,21 @@ com.tencent.tmgp.sgame{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.tencent.tmgp.sgame{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.sgame{Thread*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.sgame{Job.worker*}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.sgame{CoreThread}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.sgame=$(format_cpu_ranges "$e_core $p_core")
 
 # 和平精英
-com.tencent.tmgp.pubgmhd{Thread-[0-9]}=$(format_cpu_ranges "$hp_core")
-com.tencent.tmgp.pubgmhd{Thread-1[0-5]}=$(format_cpu_ranges "$hp_core")
+com.tencent.tmgp.pubgmhd{Thread-*}=$(format_cpu_ranges "$hp_core")
 com.tencent.tmgp.pubgmhd{RHIThread}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.pubgmhd{TaskGraphNP*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.pubgmhd{RenderThread*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.pubgmhd=$(format_cpu_ranges "$e_core $p_core")
 
 # PUBGM GLO
 com.tencent.ig{RenderThread*}=$(format_cpu_ranges "$hp_core")
-com.tencent.ig{UEGameThread}=$(format_cpu_ranges "$p_core")
-com.tencent.ig{NativeThread}=$(format_cpu_ranges "$p_core")
-com.tencent.ig{TaskGraphNP*}=$(format_cpu_ranges "$p_core")
+com.tencent.ig{UEGameThread}=2-$(format_cpu_ranges "$hp_core")
+com.tencent.ig{TaskGraphNP*}=2-$(format_cpu_ranges "$hp_core")
+com.tencent.ig{MainThread-UE4}=$(format_cpu_ranges "$p_core"),$(format_cpu_ranges "$hp_core")
 com.tencent.ig=$(format_cpu_ranges "$e_core $p_core")
 
 # 使命召唤手游
@@ -29,6 +30,19 @@ com.tencent.tmgp.cod{Thread-*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.cod{Job.worker*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.cod{Audio*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.cod=$(format_cpu_ranges "$e_core $p_core")
+
+# 英雄联盟
+com.tencent.lolm{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.tencent.lolm{LogicThread}=$(format_cpu_ranges "$p_core")
+com.tencent.lolm{Thread-*}=$(format_cpu_ranges "$p_core")
+com.tencent.lolm{NativeThread}=$(format_cpu_ranges "$p_core")
+com.tencent.lolm=$(format_cpu_ranges "$e_core $p_core")
+
+# 金铲铲之战
+com.tencent.jkchess{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.tencent.jkchess{Thread-*}=$(format_cpu_ranges "$p_core")
+com.tencent.jkchess{LogicThread}=$(format_cpu_ranges "$p_core")
+com.tencent.jkchess=$(format_cpu_ranges "$e_core $p_core")
 
 # 明日方舟
 com.hypergryph.arknights{UnityMain*}=$(format_cpu_ranges "$hp_core")
@@ -127,23 +141,10 @@ com.Sunborn.SnqxExilium=$(format_cpu_ranges "$e_core $p_core")
 
 # DNF
 com.tencent.tmgp.dnf{UnityMain}=$(format_cpu_ranges "$hp_core")
-com.tencent.tmgp.dnf{Thread-[0-9]*}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.dnf{Thread-[0-9]*}=$(format_cpu_ranges "$e_core $p_core")
 com.tencent.tmgp.dnf{UnityChoreograp}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.dnf{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.dnf=$(format_cpu_ranges "$e_core $p_core")
-
-# 英雄联盟
-com.tencent.lolm{UnityMain}=$(format_cpu_ranges "$hp_core")
-com.tencent.lolm{LogicThread}=$(format_cpu_ranges "$p_core")
-com.tencent.lolm{Thread-*}=$(format_cpu_ranges "$p_core")
-com.tencent.lolm{NativeThread}=$(format_cpu_ranges "$p_core")
-com.tencent.lolm=$(format_cpu_ranges "$e_core $p_core")
-
-# 金铲铲之战
-com.tencent.jkchess{UnityMain}=$(format_cpu_ranges "$hp_core")
-com.tencent.jkchess{Thread-*}=$(format_cpu_ranges "$p_core")
-com.tencent.jkchess{LogicThread}=$(format_cpu_ranges "$p_core")
-com.tencent.jkchess=$(format_cpu_ranges "$e_core $p_core")
 
 # 皇室战争
 com.tencent.tmgp.supercell.clashroyale{Mainloop}=$(format_cpu_ranges "$hp_core")
@@ -178,22 +179,20 @@ com.tencent.tmgp.speedmobile{Job.Worker*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.speedmobile=$(format_cpu_ranges "$e_core $p_core")
 
 # 雀魂
-com.soulgamechst.majsoul{Thread-??}=$(format_cpu_ranges "$p_core")
-#垃圾线程
+com.soulgamechst.majsoul{Thread-??}=$(format_cpu_ranges "$p_core")      #垃圾线程
 com.soulgamechst.majsoul{UnityMain}=$(format_cpu_ranges "$e_core $p_core")
-com.soulgamechst.majsoul{Job.Worker*}=2$(format_cpu_ranges "$p_core")
+com.soulgamechst.majsoul{Job.Worker*}=$(format_cpu_ranges "$p_core")
 com.soulgamechst.majsoul=$(format_cpu_ranges "$e_core $p_core")
 
 # 崩坏3(官服)
-com.miHoYo.enterprise.NGHSoD{UnityMain}=(format_cpu_ranges "$hp_core")
-com.miHoYo.enterprise.NGHSoD{UnityGfxDeviceW}=(format_cpu_ranges "$p_core")
-com.miHoYo.enterprise.NGHSoD{NativeThread}=(format_cpu_ranges "$p_core")
-com.miHoYo.enterprise.NGHSoD=(format_cpu_ranges "$e_core $p_core")
+com.miHoYo.enterprise.NGHSoD{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.miHoYo.enterprise.NGHSoD{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
+com.miHoYo.enterprise.NGHSoD{NativeThread}=$(format_cpu_ranges "$p_core")
+com.miHoYo.enterprise.NGHSoD=$(format_cpu_ranges "$e_core $p_core")
 
 # 多乐够级(HW)
-com.k7k7.goujihd.huawei{GLThread*}=(format_cpu_ranges "$hp_core")
-com.k7k7.goujihd.huawei{AudioTrack}=(format_cpu_ranges "$p_core")
-com.k7k7.goujihd.huawei{binder*}=(format_cpu_ranges "$p_core")
-com.k7k7.goujihd.huawei{Thread*}=(format_cpu_ranges "$p_core")
-com.k7k7.goujihd.huawei=(format_cpu_ranges "$e_core $p_core")
-"
+com.k7k7.goujihd.huawei{GLThread*}=$(format_cpu_ranges "$hp_core")
+com.k7k7.goujihd.huawei{AudioTrack}=$(format_cpu_ranges "$p_core")
+com.k7k7.goujihd.huawei{binder*}=$(format_cpu_ranges "$p_core")
+com.k7k7.goujihd.huawei{Thread*}=$(format_cpu_ranges "$p_core")
+com.k7k7.goujihd.huawei=$(format_cpu_ranges "$e_core $p_core")
