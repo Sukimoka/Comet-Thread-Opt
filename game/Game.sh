@@ -196,3 +196,10 @@ com.k7k7.goujihd.huawei{AudioTrack}=$(format_cpu_ranges "$p_core")
 com.k7k7.goujihd.huawei{binder*}=$(format_cpu_ranges "$p_core")
 com.k7k7.goujihd.huawei{Thread*}=$(format_cpu_ranges "$p_core")
 com.k7k7.goujihd.huawei=$(format_cpu_ranges "$e_core $p_core")
+
+# 暗区突围
+com.tencent.mf.uam{GameThread}=$(format_cpu_ranges "$hp_core")
+com.tencent.mf.uam{RenderThread*}=$(format_cpu_ranges "$p_core")
+com.tencent.mf.uam{RHIThread}=$(format_cpu_ranges "$p_core")
+com.tencent.mf.uam{com.tencent.mf.uam}=$(format_cpu_ranges "$p_core")
+com.tencent.mf.uam=$(format_cpu_ranges "$e_core $p_core")
