@@ -240,3 +240,11 @@ com.tencent.mf.uam{RenderThread*}=$(format_cpu_ranges "$p_core")
 com.tencent.mf.uam{RHIThread}=$(format_cpu_ranges "$p_core")
 com.tencent.mf.uam{com.tencent.mf.uam}=$(format_cpu_ranges "$p_core")
 com.tencent.mf.uam=$(format_cpu_ranges "$e_core $p_core")
+
+# 枪火重生
+com.duoyi.m2m1{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.duoyi.m2m1{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
+com.duoyi.m2m1{Job.Worker}=$(format_cpu_ranges "$p_core")
+com.duoyi.m2m1{NativeThread }=$(format_cpu_ranges "$p_core")
+com.duoyi.m2m1{AudioTrack}=$(format_cpu_ranges "$p_core")
+com.duoyi.m2m1=$(format_cpu_ranges "$ e_core $p_core")
