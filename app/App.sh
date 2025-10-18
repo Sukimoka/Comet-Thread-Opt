@@ -289,6 +289,14 @@ mark.via{mark.via}=$(format_cpu_ranges "$p_core")
 mark.via{RenderThread}=$(format_cpu_ranges "$p_core")
 mark.via=$(format_cpu_ranges "$e_core $p_core")
 
+# edge
+com.microsoft.emmx{RenderThread}=$(format_cpu_ranges "$p_core")
+com.microsoft.emmx{.microsoft.emmx}=$(format_cpu_ranges "$p_core")
+com.microsoft.emmx{Thread-*}=$(format_cpu_ranges "$p_core")
+com.microsoft.emmx{NetworkService}=$(format_cpu_ranges "$p_core")
+com.microsoft.emmx{hwuiTask*}=$(format_cpu_ranges "$p_core")
+com.microsoft.emmx=$(format_cpu_ranges "$e_core $p_core")
+
 # DeepSeek
 com.deepseek.chat{m.deepseek.chat}=$(format_cpu_ranges "$p_core")
 com.deepseek.chat{RenderThread}=$(format_cpu_ranges "$p_core")
@@ -298,6 +306,12 @@ com.deepseek.chat=$(format_cpu_ranges "$e_core $p_core")
 com.MobileTicket{om.MobileTicket}=$(format_cpu_ranges "$p_core")
 com.MobileTicket{RenderThread}=$(format_cpu_ranges "$p_core")
 com.MobileTicket=$(format_cpu_ranges "$e_core $p_core")
+
+# Breezy Weather
+org.breezyweather{RenderThread}=$(format_cpu_ranges "$p_core")
+org.breezyweather{g.breezyweather}=$(format_cpu_ranges "$p_core")
+org.breezyweather{Binder:*}=$(format_cpu_ranges "$p_core")
+org.breezyweather=$(format_cpu_ranges "$e_core $p_core")
 
 #玩机软件
 # Noactive
