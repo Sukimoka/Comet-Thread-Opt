@@ -316,8 +316,16 @@ com.tencent.wetype:play=$(format_cpu_ranges "$e_core")
 com.kugou.android.support=$(format_cpu_ranges "$e_core")
 com.kugou.android.message=$(format_cpu_ranges "$e_core")
 
-# 将微信Push消息推送进程绑定e_core
+# 将Push消息推送进程绑定e_core
 com.tencent.mm:push=$(format_cpu_ranges "$e_core")
+com.luna.music:push=$(format_cpu_ranges "$e_core")
+com.ss.android.ugc.aweme.mobile:push=$(format_cpu_ranges "$e_core")
+com.bilibili.app.in:pushservice=$(format_cpu_ranges "$e_core")
+tv.danmaku.bilibilihd:pushservice=$(format_cpu_ranges "$e_core")
+tv.danmaku.bili:pushservice=0-1,5
+com.tencent.mobileqq:MSF=$(format_cpu_ranges "$e_core")
+com.tencent.tim:MSF=$(format_cpu_ranges "$e_core")
+com.alibaba.android.rimet:push=$(format_cpu_ranges "$e_core")
 
 # 系统桌面
 com.android.launcher{RenderThread}=$(format_cpu_ranges "$p_core")
