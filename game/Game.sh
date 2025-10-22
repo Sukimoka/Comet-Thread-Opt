@@ -248,3 +248,11 @@ com.duoyi.m2m1{Job.Worker}=$(format_cpu_ranges "$p_core")
 com.duoyi.m2m1{NativeThread }=$(format_cpu_ranges "$p_core")
 com.duoyi.m2m1{AudioTrack}=$(format_cpu_ranges "$p_core")
 com.duoyi.m2m1=$(format_cpu_ranges "$ e_core $p_core")
+
+# 皇室战争 GLO
+com.supercell.clashroyale{Mainloop}=$(format_cpu_ranges "$hp_core")
+com.supercell.clashroyale{FMOD mixer thre}=$(format_cpu_ranges "$p_core")
+com.supercell.clashroyale{Thread*}=$(format_cpu_ranges "$p_core")
+com.supercell.clashroyale{Binder*}=$(format_cpu_ranges "$p_core")
+com.supercell.clashroyale{AudioTrack}=$(format_cpu_ranges "$p_core")
+com.supercell.clashroyale=$(format_cpu_ranges "$e_core $p_core")
