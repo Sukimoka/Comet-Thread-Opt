@@ -177,6 +177,12 @@ com.zhihu.android{RenderThread}=$(format_cpu_ranges "$p_core")
 com.zhihu.android{m.zhihu.android}=$(format_cpu_ranges "$p_core")
 com.zhihu.android=$(format_cpu_ranges "$e_core $p_core")
 
+# 悠悠有品
+com.uu898.uuhavequality:core{8.uuhavequality}=$(format_cpu_ranges "$p_core")
+com.uu898.uuhavequality:core{RenderThread}=$(format_cpu_ranges "$p_core")
+com.uu898.uuhavequality:core{BR-LagTrace-Thr}=$(format_cpu_ranges "$p_core")
+com.uu898.uuhavequality:core=$(format_cpu_ranges "$e_core $p_core")
+
 # X
 com.twitter.android{twitter.android}=$(format_cpu_ranges "$p_core")
 com.twitter.android{RenderThread}=$(format_cpu_ranges "$p_core")
