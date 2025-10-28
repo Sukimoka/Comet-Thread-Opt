@@ -280,6 +280,19 @@ com.baidu.BaiduMap{*Thread}=$(format_cpu_ranges "$p_core")
 com.baidu.BaiduMap=$(format_cpu_ranges "$e_core $p_core")
 
 #工具型
+# 小猿搜题
+com.fenbi.android.solar{i.android.solar}=$(format_cpu_ranges "$p_core")
+com.fenbi.android.solar{RenderThread}=$(format_cpu_ranges "$p_core")
+com.fenbi.android.solar{VizWebView}=$(format_cpu_ranges "$p_core")
+com.fenbi.android.solar{Chrome_InProcGp}=$(format_cpu_ranges "$p_core")
+com.fenbi.android.solar=$(format_cpu_ranges "$e_core $p_core")
+
+# 豆包
+com.larus.nova{RenderThread}=$(format_cpu_ranges "$p_core")
+com.larus.nova{com.larus.nova}=$(format_cpu_ranges "$p_core")
+com.larus.nova{MediaLoad}=$(format_cpu_ranges "$p_core")
+com.larus.nova=$(format_cpu_ranges "$e_core $p_core")
+
 # 3Dmark
 com.futuremark.dmandroid.application{Thread-??}=$(format_cpu_ranges "$hp_core")
 com.futuremark.dmandroid.application{*binder}=$(format_cpu_ranges "$p_core")
