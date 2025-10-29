@@ -137,6 +137,13 @@ com.smile.gifmaker{smile.gifmaker}=$(format_cpu_ranges "$p_core")
 com.smile.gifmaker{MediaCodec_*}=$(format_cpu_ranges "$p_core")
 com.smile.gifmaker=$(format_cpu_ranges "$e_core $p_core")
 
+# 快手极速版
+com.kuaishou.nebula{RenderThread}=$(format_cpu_ranges "$p_core")
+com.kuaishou.nebula{kuaishou.nebula}=$(format_cpu_ranges "$p_core")
+com.kuaishou.nebula{thread*}=$(format_cpu_ranges "$p_core")
+com.kuaishou.nebula{*ffmpeg*}=$(format_cpu_ranges "$p_core")
+com.kuaishou.nebula=$(format_cpu_ranges "$e_core $p_core")
+
 # 爱奇艺
 com.qiyi.video{PLAYER_INFLATE_}=$(format_cpu_ranges "$p_core")
 com.qiyi.video{RenderThread}=$(format_cpu_ranges "$p_core")
