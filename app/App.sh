@@ -131,6 +131,13 @@ com.example.piliplus{1.raster}=$(format_cpu_ranges "$p_core")
 com.example.piliplus{1.ui}=$(format_cpu_ranges "$p_core")
 com.example.piliplus=$(format_cpu_ranges "$e_core $p_core")
 
+# komikku
+app.komikku.beta{pp.komikku.beta}=$(format_cpu_ranges "$p_core")
+app.komikku.beta{*thread*}=$(format_cpu_ranges "$p_core")
+app.komikku.beta{RenderThread}=$(format_cpu_ranges "$p_core")
+app.komikku.beta{AsyncTask*}=$(format_cpu_ranges "$p_core")
+app.komikku.beta{}=$(format_cpu_ranges "$e_core $p_core")
+
 # 快手
 com.smile.gifmaker{RenderThread}=$(format_cpu_ranges "$p_core")
 com.smile.gifmaker{smile.gifmaker}=$(format_cpu_ranges "$p_core")
