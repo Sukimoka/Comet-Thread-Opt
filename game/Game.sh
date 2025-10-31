@@ -216,8 +216,8 @@ com.tencent.tmgp.speedmobile{Job.Worker*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.speedmobile=$(format_cpu_ranges "$e_core $p_core")
 
 # 雀魂
-com.soulgamechst.majsoul{Thread-??}=$(format_cpu_ranges "$p_core")      #垃圾线程
-com.soulgamechst.majsoul{UnityMain}=$(format_cpu_ranges "$e_core $p_core")
+com.soulgamechst.majsoul{Thread-??}=$(format_cpu_ranges "$e_core")      #垃圾线程
+com.soulgamechst.majsoul{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.soulgamechst.majsoul{Job.Worker*}=$(format_cpu_ranges "$p_core")
 com.soulgamechst.majsoul=$(format_cpu_ranges "$e_core $p_core")
 
@@ -256,3 +256,11 @@ com.supercell.clashroyale{Thread*}=$(format_cpu_ranges "$p_core")
 com.supercell.clashroyale{Binder*}=$(format_cpu_ranges "$p_core")
 com.supercell.clashroyale{AudioTrack}=$(format_cpu_ranges "$p_core")
 com.supercell.clashroyale=$(format_cpu_ranges "$e_core $p_core")
+
+# SMAPI Launcher(星露谷物语)
+abc.ningban.gameloades{gban.gameloades}=$(format_cpu_ranges "$hp_core")
+abc.ningban.gameloades{.NET Long Runni}=$(format_cpu_ranges "$p_core")
+abc.ningban.gameloades{AudioTrack}=$(format_cpu_ranges "$p_core")
+abc.ningban.gameloades{Thread-*}=$(format_cpu_ranges "$e_core") 
+#垃圾线程
+abc.ningban.gameloades=$(format_cpu_ranges "$e_core $p_core")
