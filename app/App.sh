@@ -58,7 +58,7 @@ com.taobao.taobao{WeexJSBridgeTh}=$(format_cpu_ranges "$p_core")
 com.taobao.taobao{HeapTaskDaemon}=$(format_cpu_ranges "$p_core")
 com.taobao.taobao{m.taobao.taobao}=$(format_cpu_ranges "$p_core")
 com.taobao.taobao{8RYPVI8EZKhJUU}=$(format_cpu_ranges "$p_core")
-com.taobao.taobao=$$(format_cpu_ranges "$e_core $p_core")
+com.taobao.taobao=$(format_cpu_ranges "$e_core $p_core")
 
 # 京东
 com.jingdong.app.mall{RenderThread}=$(format_cpu_ranges "$p_core")
