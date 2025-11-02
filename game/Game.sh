@@ -264,3 +264,10 @@ abc.ningban.gameloades{AudioTrack}=$(format_cpu_ranges "$p_core")
 abc.ningban.gameloades{Thread-*}=$(format_cpu_ranges "$e_core") 
 #垃圾线程
 abc.ningban.gameloades=$(format_cpu_ranges "$e_core $p_core")
+
+# 洛克王国
+com.tencent.nrc{GameThread}=$(format_cpu_ranges "$hp_core")
+com.tencent.nrc{RHIThread}=$(format_cpu_ranges "$p_core")
+com.tencent.nrc{RenderThread*}=$(format_cpu_ranges "$p_core")
+com.tencent.nrc{TaskGraphHP*}=$(format_cpu_ranges "$p_core")
+com.tencent.nrc=$(format_cpu_ranges "$e_core $p_core")
