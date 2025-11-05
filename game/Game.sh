@@ -271,3 +271,10 @@ com.tencent.nrc{RHIThread}=$(format_cpu_ranges "$p_core")
 com.tencent.nrc{RenderThread*}=$(format_cpu_ranges "$p_core")
 com.tencent.nrc{TaskGraphHP*}=$(format_cpu_ranges "$p_core")
 com.tencent.nrc=$(format_cpu_ranges "$e_core $p_core")
+
+# 决胜巅峰
+com.dfjz.moba.kuaishou{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.dfjz.moba.kuaishou{dfp-1-thread-4}=$(format_cpu_ranges "$p_core")
+com.dfjz.moba.kuaishou{Thread*}=$(format_cpu_ranges "$p_core")
+com.dfjz.moba.kuaishou{*Thread}=$(format_cpu_ranges "$p_core")
+com.dfjz.moba.kuaishou=$(format_cpu_ranges "$e_core $p_core")
