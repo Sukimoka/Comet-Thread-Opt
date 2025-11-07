@@ -278,3 +278,10 @@ com.dfjz.moba.kuaishou{dfp-1-thread-4}=$(format_cpu_ranges "$p_core")
 com.dfjz.moba.kuaishou{Thread*}=$(format_cpu_ranges "$p_core")
 com.dfjz.moba.kuaishou{*Thread}=$(format_cpu_ranges "$p_core")
 com.dfjz.moba.kuaishou=$(format_cpu_ranges "$e_core $p_core")
+
+# 香肠派对
+com.sofunny.sausage{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.sofunny.sausage{Thread*}=$(format_cpu_ranges "$p_core")
+com.sofunny.sausage{Job.Worker*}=$(format_cpu_ranges "$h
+p_core")
+com.sofunny.sausage=$(format_cpu_ranges "$e_core $p_core")
