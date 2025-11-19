@@ -32,6 +32,10 @@ org.telegram.group{Thread-*}=$(format_cpu_ranges "$p_core")
 org.telegram.group{RenderThread}=$(format_cpu_ranges "$p_core")
 org.telegram.group{.telegram.group}=$(format_cpu_ranges "$p_core")
 org.telegram.group=$(format_cpu_ranges "$e_core $p_core")
+org.telegram.messenger{Thread-*}=$(format_cpu_ranges "$p_core")
+org.telegram.messenger{RenderThread}=$(format_cpu_ranges "$p_core")
+org.telegram.messenger{egram.messenger}=$(format_cpu_ranges "$p_core")
+org.telegram.messenger=$(format_cpu_ranges "$e_core $p_core")
 
 # Nagram X
 nu.gpu.nagram{Thread-*}=$(format_cpu_ranges "$p_core")
