@@ -21,7 +21,7 @@ com.tencent.tim=$(format_cpu_ranges "$e_core $p_core")
 # Nekogram
 tw.nekomimi.nekogram{RehderThread}=$(format_cpu_ranges "$p_core")
 tw.nekomimi.nekogram{files_database_}=$(format_cpu_ranges "$p_core")
-tw.nekomimi.nekogram{searchQueue}$(format_cpu_ranges "$p_core")
+tw.nekomimi.nekogram{searchQueue}=$(format_cpu_ranges "$p_core")
 tw.nekomimi.nekogram{komimi.nekogram}=$(format_cpu_ranges "$p_core")
 tw.nekomimi.nekogram=$(format_cpu_ranges "$e_core $p_core")
 
@@ -202,14 +202,14 @@ com.uu898.uuhavequality:core=$(format_cpu_ranges "$e_core $p_core")
 # X
 com.twitter.android{twitter.android}=$(format_cpu_ranges "$p_core")
 com.twitter.android{RenderThread}=$(format_cpu_ranges "$p_core")
-com.twitter.android{MediaCodec loop}=$(format_cpu_ranges "$p_core")
+com.twitter.android{MediaCodec_loop}=$(format_cpu_ranges "$p_core")
 com.twitter.android=$(format_cpu_ranges "$e_core $p_core")
 
 # YouTube
 com.google.android.youtube{android.youtube}=$(format_cpu_ranges "$p_core")
 com.google.android.youtube{RenderThread}=$(format_cpu_ranges "$p_core")
 com.google.android.youtube{ExoPlayer:Playb}=$(format_cpu_ranges "$p_core")
-com.google.android.youtube{MediaCodec loop}=$(format_cpu_ranges "$p_core")
+com.google.android.youtube{MediaCodec_loop}=$(format_cpu_ranges "$p_core")
 com.google.android.youtube=$(format_cpu_ranges "$e_core $p_core")
 
 # Facebook
@@ -222,7 +222,7 @@ com.facebook.katana=$(format_cpu_ranges "$e_core $p_core")
 com.discord{com.discord}=$(format_cpu_ranges "$p_core")
 com.discord{pool-10-thread-*}=$(format_cpu_ranges "$p_core")
 com.discord{RenderThread}=$(format_cpu_ranges "$p_core")
-com.discord{mqt js}=$(format_cpu_ranges "$p_core")
+com.discord{mqt_js}=$(format_cpu_ranges "$p_core")
 com.discord=$(format_cpu_ranges "$e_core $p_core")
 
 # Lanerc
