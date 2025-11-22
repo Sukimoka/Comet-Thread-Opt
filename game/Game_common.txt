@@ -184,12 +184,12 @@ com.tencent.tmgp.dnf=$(format_cpu_ranges "$e_core $p_core")
 # 皇室战争
 com.tencent.tmgp.supercell.clashroyale{Mainloop}=$(format_cpu_ranges "$hp_core")
 com.tencent.tmgp.supercell.clashroyale{Thread-*}=$(format_cpu_ranges "$p_core")
-com.tencent.tmgp.supercell.clashroyale{FMOD mixer thre}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.supercell.clashroyale{FMOD_mixer_thre}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.supercell.clashroyale=$(format_cpu_ranges "$e_core $p_core")
 
 # 荒野乱斗
 com.tencent.tmgp.supercell.brawlstars{Mainloop}=$(format_cpu_ranges "$hp_core")
-com.tencent.tmgp.supercell.brawlstars{FMOD mixer thre}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.supercell.brawlstars{FMOD_mixer_thre}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.supercell.brawlstars{Thread-*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.supercell.brawlstars=$(format_cpu_ranges "$e_core $p_core")
 
