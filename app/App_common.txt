@@ -19,7 +19,7 @@ com.tencent.tim{HeapTaskDaemon}=$(format_cpu_ranges "$p_core")
 com.tencent.tim=$(format_cpu_ranges "$e_core $p_core")
 
 # Nekogram
-tw.nekomimi.nekogram{RehderThread}=$(format_cpu_ranges "$p_core")
+tw.nekomimi.nekogram{RenderThread}=$(format_cpu_ranges "$p_core")
 tw.nekomimi.nekogram{files_database_}=$(format_cpu_ranges "$p_core")
 tw.nekomimi.nekogram{searchQueue}=$(format_cpu_ranges "$p_core")
 tw.nekomimi.nekogram{komimi.nekogram}=$(format_cpu_ranges "$p_core")
