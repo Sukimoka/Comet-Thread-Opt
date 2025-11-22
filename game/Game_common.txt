@@ -1,5 +1,3 @@
-"********************************************"
-game_rules="
 #Game
 # 王者荣耀
 com.tencent.tmgp.sgame{UnityMain}=$(format_cpu_ranges "$hp_core")
