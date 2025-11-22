@@ -111,7 +111,7 @@ com.HoYoverse.Nap=2-6
 # 鸣潮
 com.kurogame.mingchao{GameThread}=7
 com.kurogame.mingchao{RHIThread}=2-4
-com.kurogame.mingchao{RenderThread 1}=2-4
+com.kurogame.mingchao{RenderThread*}=2-4
 com.kurogame.mingchao{NativeThread}=2-4
 com.kurogame.mingchao=2-6
 
@@ -183,12 +183,12 @@ com.tencent.tmgp.dnf=2-6
 # 皇室战争
 com.tencent.tmgp.supercell.clashroyale{Mainloop}=7
 com.tencent.tmgp.supercell.clashroyale{Thread-*}=2-4
-com.tencent.tmgp.supercell.clashroyale{FMOD mixer thre}=2-4
+com.tencent.tmgp.supercell.clashroyale{FMOD_mixer_thre}=2-4
 com.tencent.tmgp.supercell.clashroyale=2-6
 
 # 荒野乱斗
 com.tencent.tmgp.supercell.brawlstars{Mainloop}=7
-com.tencent.tmgp.supercell.brawlstars{FMOD mixer thre}=2-4
+com.tencent.tmgp.supercell.brawlstars{FMOD_mixer_thre}=2-4
 com.tencent.tmgp.supercell.brawlstars{Thread-*}=2-4
 com.tencent.tmgp.supercell.brawlstars=2-6
 
@@ -242,13 +242,13 @@ com.tencent.mf.uam=2-6
 com.duoyi.m2m1{UnityMain}=7
 com.duoyi.m2m1{UnityGfxDeviceW}=2-4
 com.duoyi.m2m1{Job.Worker}=2-4
-com.duoyi.m2m1{NativeThread }=2-4
+com.duoyi.m2m1{NativeThread*}=2-4
 com.duoyi.m2m1{AudioTrack}=5-6
 com.duoyi.m2m1=2-6
 
 # 皇室战争 GLO
 com.supercell.clashroyale{Mainloop}=7
-com.supercell.clashroyale{FMOD mixer thre}=2-4
+com.supercell.clashroyale{FMOD_mixer_thre}=2-4
 com.supercell.clashroyale{Thread*}=2-4
 com.supercell.clashroyale{Binder*}=2-4
 com.supercell.clashroyale{AudioTrack}=5-6
@@ -256,7 +256,7 @@ com.supercell.clashroyale=2-6
 
 # SMAPI Launcher(星露谷物语)
 abc.ningban.gameloades{gban.gameloades}=7
-abc.ningban.gameloades{.NET Long Runni}=2-4
+abc.ningban.gameloades{.NET_Long_Runni}=2-4
 abc.ningban.gameloades{AudioTrack}=2-6
 abc.ningban.gameloades{Thread-*}=5-6   
 #垃圾线程
