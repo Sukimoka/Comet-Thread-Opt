@@ -21,7 +21,7 @@ com.tencent.tim=5-6
 # Nekogram
 tw.nekomimi.nekogram{RenderThread}=2-6
 tw.nekomimi.nekogram{files_database_}=5-6
-tw.nekomimi.nekogram{searchQueue}5-6
+tw.nekomimi.nekogram{searchQueue}=5-6
 tw.nekomimi.nekogram{komimi.nekogram}=2-6
 tw.nekomimi.nekogram=5-6
 
