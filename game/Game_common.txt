@@ -1,4 +1,4 @@
-#Game
+8#Game
 # 王者荣耀
 com.tencent.tmgp.sgame{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.tencent.tmgp.sgame{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
@@ -245,7 +245,7 @@ com.duoyi.m2m1{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
 com.duoyi.m2m1{Job.Worker}=$(format_cpu_ranges "$p_core")
 com.duoyi.m2m1{NativeThread }=$(format_cpu_ranges "$p_core")
 com.duoyi.m2m1{AudioTrack}=$(format_cpu_ranges "$p_core")
-com.duoyi.m2m1=$(format_cpu_ranges "$ e_core $p_core")
+com.duoyi.m2m1=$(format_cpu_ranges "$e_core $p_core")
 
 # 皇室战争 GLO
 com.supercell.clashroyale{Mainloop}=$(format_cpu_ranges "$hp_core")
@@ -257,7 +257,7 @@ com.supercell.clashroyale=$(format_cpu_ranges "$e_core $p_core")
 
 # SMAPI Launcher(星露谷物语)
 abc.ningban.gameloades{gban.gameloades}=$(format_cpu_ranges "$hp_core")
-abc.ningban.gameloades{.NET Long Runni}=$(format_cpu_ranges "$p_core")
+abc.ningban.gameloades{.NET_Long_Runni}=$(format_cpu_ranges "$p_core")
 abc.ningban.gameloades{AudioTrack}=$(format_cpu_ranges "$p_core")
 abc.ningban.gameloades{Thread-*}=$(format_cpu_ranges "$e_core") 
 #垃圾线程
@@ -280,6 +280,5 @@ com.dfjz.moba.kuaishou=$(format_cpu_ranges "$e_core $p_core")
 # 香肠派对
 com.sofunny.sausage{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.sofunny.sausage{Thread*}=$(format_cpu_ranges "$p_core")
-com.sofunny.sausage{Job.Worker*}=$(format_cpu_ranges "$h
-p_core")
+com.sofunny.sausage{Job.Worker*}=$(format_cpu_ranges "$hp_core")
 com.sofunny.sausage=$(format_cpu_ranges "$e_core $p_core")
