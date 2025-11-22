@@ -1,17 +1,14 @@
 # Comet-Thread-Opt                           
-基于SutoLiu的[AppOpt](https://gitee.com/sutoliu/AppOpt)                                             
+适用于SutoLiu的[AppOpt](https://gitee.com/sutoliu/AppOpt) 的配置文件                                            
 测试设备:OnePlus12 8G3                            
 
 # 更新说明                                            
 仅在酷安云盘,Telegram中更新，不再更新Github发行版                                                                                     
 酷安链接[Click](https://www.coolapk.com/feed/67093275?s=NjFlZDBiZWQxOWVmOWFiZzY4YmNlNzZiega1540)                          
                                                 
-Daily:仅日常使用app线程                                                      
-Mix：包含游戏和daily线程                           
-Common：通用版，理论可用于所有架构的SOC，不保证使用效果                                                                                                                            
-线程分为:云适配--未经测试                         
-        适配----经测试
-
+App:日常使用app线程                                                      
+Game：游戏线程                           
+Common：通用版，理论可用于所有架构的SOC，不保证使用效果                                         
 # 其他事项
 SutoLiu的酷安[SutoLiu](http://www.coolapk.com/u/1842370)                                    
 作者主页[风凌惜桜](http://www.coolapk.com/u/27195819)                  
