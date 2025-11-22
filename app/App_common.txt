@@ -1,5 +1,3 @@
-"******************************************""
-common_rules="
 #通讯
 # 微信
 com.tencent.mm{RenderThread}=$(format_cpu_ranges "$p_core")
