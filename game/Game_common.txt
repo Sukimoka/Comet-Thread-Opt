@@ -49,6 +49,12 @@ com.hypergryph.arknights{Thread-*}=$(format_cpu_ranges "$p_core")
 com.hypergryph.arknights{Job.worker*}=$(format_cpu_ranges "$p_core")
 com.hypergryph.arknights{Audio*}=$(format_cpu_ranges "$e_core $p_core")
 com.hypergryph.arknights=$(format_cpu_ranges "$p_core")
+com.hypergryph.arknights.bilibili{UnityMain*}=$(format_cpu_ranges "$hp_core")
+com.hypergryph.arknights.bilibili{UnityGfx*}=$(format_cpu_ranges "$p_core")
+com.hypergryph.arknights.bilibili{Thread-*}=$(format_cpu_ranges "$p_core")
+com.hypergryph.arknights.bilibili{Job.worker*}=$(format_cpu_ranges "$p_core")
+com.hypergryph.arknights.bilibili{Audio*}=$(format_cpu_ranges "$e_core $p_core")
+com.hypergryph.arknights.bilibili=$(format_cpu_ranges "$p_core")
 
 # 原神
 com.miHoYo.Yuanshen{UnityMain*}=$(format_cpu_ranges "$hp_core")
