@@ -31,7 +31,7 @@ org.telegram.group{RenderThread}=2-6
 org.telegram.group{.telegram.group}=2-6
 org.telegram.group=5-6
 org.telegram.messenger{Thread-*}=2-6
-org.telegram.messenger{RenderThread}=7
+org.telegram.messenger{RenderThread}=2-7
 org.telegram.messenger{egram.messenger}=2-6
 org.telegram.messenger=5-6
 
