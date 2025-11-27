@@ -2,5 +2,6 @@
 5.0 初始版本
 
 11.27
-5.1 common修复更新无线程问题
+common 修复更新无线程问题
+8G3 优化Telegram的表现
 适配明日方舟（Bilibili）
