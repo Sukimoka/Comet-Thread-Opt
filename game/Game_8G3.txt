@@ -145,6 +145,12 @@ com.tencent.tmgp.dfm{Thread-*}=2-4
 com.tencent.tmgp.dfm{TaskGraphNP*}=2-4
 com.tencent.tmgp.dfm{NativeThread}=2-4
 com.tencent.tmgp.dfm=2-6
+com.proxima.dfm{GameThread}=7
+com.proxima.dfm{RenderThread}=2-4
+com.proxima.dfm{Thread-*}=2-4
+com.proxima.dfm{TaskGraphNP*}=2-4
+com.proxima.dfm{NativeThread}=2-4
+com.proxima.dfm=2-6
 
 # 妮姬：新的希望
 com.tencent.nikke{UnityMain}=7
