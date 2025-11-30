@@ -141,6 +141,12 @@ com.tencent.tmgp.dfm{Thread-*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.dfm{TaskGraphNP*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.dfm{NativeThread}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.dfm=$(format_cpu_ranges "$e_core $p_core")
+com.proxima.dfm{GameThread}=$(format_cpu_ranges "$hp_core")
+com.proxima.dfm{RenderThread}=$(format_cpu_ranges "$p_core")
+com.proxima.dfm{Thread-*}=$(format_cpu_ranges "$p_core")
+com.proxima.dfm{TaskGraphNP*}=$(format_cpu_ranges "$p_core")
+com.proxima.dfm{NativeThread}=$(format_cpu_ranges "$p_core")
+com.proxima.dfm=$(format_cpu_ranges "$e_core $p_core")
 
 # 妮姬：新的希望
 com.tencent.nikke{UnityMain}=$(format_cpu_ranges "$hp_core")
