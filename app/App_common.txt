@@ -230,12 +230,17 @@ com.discord{RenderThread}=$(format_cpu_ranges "$p_core")
 com.discord{mqt_js}=$(format_cpu_ranges "$p_core")
 com.discord=$(format_cpu_ranges "$e_core $p_core")
 
-# Lanerc
-com.xuzly.hy.lanerc.app{Thread-*}=$(format_cpu_ranges "$p_core")
-com.xuzly.hy.lanerc.app{1.ui}=$(format_cpu_ranges "$p_core")
-com.xuzly.hy.lanerc.app{mpv/demux}=$(format_cpu_ranges "$p_core")
-com.xuzly.hy.lanerc.app{1.raster}=$(format_cpu_ranges "$p_core")
-com.xuzly.hy.lanerc.app=$(format_cpu_ranges "$e_core $p_core")
+# 动漫共和国
+com.shizi.tool.p3{RenderThread}=$(format_cpu_ranges "$p_core")
+com.shizi.tool.p3{imore.wallpaper}=$(format_cpu_ranges "$p_core")
+com.shizi.tool.p3{glide-disk-cach}=$(format_cpu_ranges "$p_core")
+com.shizi.tool.p3=$(format_cpu_ranges "$e_core $p_core")
+
+#边缘视频
+com.hjmore.wallpaper{imore.wallpaper}=$(format_cpu_ranges "$p_core")
+com.hjmore.wallpaper{RenderThread}=$(format_cpu_ranges "$p_core")
+com.hjmore.wallpaper{HeapTaskDaemon}=$(format_cpu_ranges "$p_core")
+com.hjmore.wallpaper=$(format_cpu_ranges "$e_core $p_core")
 
 # 网易云音乐
 com.netease.cloudmusic{RenderThread}=$(format_cpu_ranges "$p_core")
