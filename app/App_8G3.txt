@@ -233,12 +233,17 @@ com.discord{RenderThread}=2-6
 com.discord{mqt_js}=5-6
 com.discord=5-6
 
-# Lanerc
-com.xuzly.hy.lanerc.app{Thread-*}=2-6
-com.xuzly.hy.lanerc.app{1.ui}=5-6
-com.xuzly.hy.lanerc.app{mpv/demux}=5-6
-com.xuzly.hy.lanerc.app{1.raster}=5-6
-com.xuzly.hy.lanerc.app=5-6
+# 动漫共和国
+com.shizi.tool.p3{RenderThread}=2-6
+com.shizi.tool.p3{imore.wallpaper}=2-6
+com.shizi.tool.p3{glide-disk-cach}=5-6
+com.shizi.tool.p3=5-6
+
+#边缘视频
+com.hjmore.wallpaper{imore.wallpaper}=2-6
+com.hjmore.wallpaper{RenderThread}=2-6
+com.hjmore.wallpaper{HeapTaskDaemon}=5-6
+com.hjmore.wallpaper=5-6
 
 # 网易云音乐
 com.netease.cloudmusic{RenderThread}=2-6
