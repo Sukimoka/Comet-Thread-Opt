@@ -342,6 +342,13 @@ com.microsoft.emmx{NetworkService}=$(format_cpu_ranges "$p_core")
 com.microsoft.emmx{hwuiTask*}=$(format_cpu_ranges "$p_core")
 com.microsoft.emmx=$(format_cpu_ranges "$e_core $p_core")
 
+# 360极速浏览器
+com.qihoo.contents{.qihoo.contents}=$(format_cpu_ranges "$p_core")
+com.qihoo.contents{RenderThread}=$(format_cpu_ranges "$p_core")
+com.qihoo.contents{Thread-*}=$(format_cpu_ranges "$p_core")
+com.qihoo.contents{VizWebView}=$(format_cpu_ranges "$p_core")
+com.qihoo.contents=$(format_cpu_ranges "$e_core $p_core")
+
 # DeepSeek
 com.deepseek.chat{m.deepseek.chat}=$(format_cpu_ranges "$p_core")
 com.deepseek.chat{RenderThread}=$(format_cpu_ranges "$p_core")
@@ -409,3 +416,9 @@ com.sec.android.app.launcher{RenderThread}=$(format_cpu_ranges "$p_core")
 com.sec.android.app.launcher{id.app.launcher}=$(format_cpu_ranges "$p_core")
 com.sec.android.app.launcher{binder*}=$(format_cpu_ranges "$p_core")
 com.sec.android.app.launcher=$(format_cpu_ranges "$e_core $p_core")
+
+# flyme桌面
+com.meizu.flyme.launcher{.flyme.launcher}=$(format_cpu_ranges "$p_core")
+com.meizu.flyme.launcher{binder*}=$(format_cpu_ranges "$p_core")
+com.meizu.flyme.launcher{RenderThread}=$(format_cpu_ranges "$p_core")
+com.meizu.flyme.launcher=$(format_cpu_ranges "$e_core $p_core")
