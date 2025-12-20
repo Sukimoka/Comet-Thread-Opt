@@ -18,3 +18,6 @@ common 修复更新无线程问题
 
 12.15
 适配Honor of Kings
+
+12.20
+适配360极速浏览器,Flyme桌面
