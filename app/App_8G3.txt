@@ -340,6 +340,13 @@ com.microsoft.emmx{NetworkService}=2-6
 com.microsoft.emmx{hwuiTask*}=2-6
 com.microsoft.emmx=5-6
 
+#360极速浏览器
+com.qihoo.contents{.qihoo.contents}=2-6
+com.qihoo.contents{RenderThread}=2-6
+com.qihoo.contents{Thread-*}=2-6
+com.qihoo.contents{VizWebView}=5-6
+com.qihoo.contents=5-6
+
 # via
 mark.via{mark.via}=5-6
 mark.via{RenderThread}=2-6
@@ -412,3 +419,9 @@ com.sec.android.app.launcher{RenderThread}=2-6
 com.sec.android.app.launcher{id.app.launcher}=2-6
 com.sec.android.app.launcher{binder*}=2-6
 com.sec.android.app.launcher=5-6
+
+# flyme桌面
+com.meizu.flyme.launcher{.flyme.launcher}=2-6
+com.meizu.flyme.launcher{binder*}=2-6
+com.meizu.flyme.launcher{RenderThread}=2-6
+com.meizu.flyme.launcher=5-6
