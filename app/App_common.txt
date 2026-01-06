@@ -359,6 +359,12 @@ com.MobileTicket{om.MobileTicket}=$(format_cpu_ranges "$p_core")
 com.MobileTicket{RenderThread}=$(format_cpu_ranges "$p_core")
 com.MobileTicket=$(format_cpu_ranges "$e_core $p_core")
 
+# 同花顺
+com.hexin.plat.android{in.plat.android}=$(format_cpu_ranges "$p_core")
+com.hexin.plat.android{RenderThread}=$(format_cpu_ranges "$p_core")
+com.hexin.plat.android{Thread*}=$(format_cpu_ranges "$p_core")
+com.hexin.plat.android=$(format_cpu_ranges "$e_core $p_core")
+
 # Breezy Weather
 org.breezyweather{RenderThread}=$(format_cpu_ranges "$p_core")
 org.breezyweather{g.breezyweather}=$(format_cpu_ranges "$p_core")
