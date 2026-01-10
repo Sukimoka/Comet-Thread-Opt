@@ -1,4 +1,4 @@
-8#Game
+#Game
 # 王者荣耀
 com.tencent.tmgp.sgame{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.tencent.tmgp.sgame{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
