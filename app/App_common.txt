@@ -175,6 +175,14 @@ com.ss.android.ugc.aweme.lite{droid.ugc.aweme}=$(format_cpu_ranges "$p_core")
 com.ss.android.ugc.aweme.lite{#pty-wqp-*}=$(format_cpu_ranges "$p_core")
 com.ss.android.ugc.aweme.lite=$(format_cpu_ranges "$e_core $p_core")
 
+# 抖音精选
+com.ss.android.yumme.video{RenderThread}=$(format_cpu_ranges "$p_core")
+com.ss.android.yumme.video{oid.yumme.video}=$(format_cpu_ranges "$p_core")
+com.ss.android.yumme.video{MediaCodec_loop}=$(format_cpu_ranges "$p_core")
+com.ss.android.yumme.video{TRThread*}=$(format_cpu_ranges "$p_core")
+com.ss.android.yumme.video{VDecod*}=$(format_cpu_ranges "$p_core")
+com.ss.android.yumme.video=$(format_cpu_ranges "$e_core $p_core")
+
 # 酷安
 com.coolapk.market{RenderThread}=$(format_cpu_ranges "$p_core")
 com.coolapk.market{Thread-*}=$(format_cpu_ranges "$p_core")
