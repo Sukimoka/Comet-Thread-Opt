@@ -300,3 +300,10 @@ com.sofunny.sausage{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.sofunny.sausage{Thread*}=$(format_cpu_ranges "$p_core")
 com.sofunny.sausage{Job.Worker*}=$(format_cpu_ranges "$hp_core")
 com.sofunny.sausage=$(format_cpu_ranges "$e_core $p_core")
+
+# 逆战:未来
+com.tencent.tmgp.nz{GameThread}=$(format_cpu_ranges "$hp_core")
+com.tencent.tmgp.nz{RenderThread}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.nz{TaskGraphNP}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.nz{Thread*}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.nz=$(format_cpu_ranges "$e_core $p_core")
