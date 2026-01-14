@@ -307,3 +307,10 @@ com.sofunny.sausage{UnityMain}=7
 com.sofunny.sausage{Thread*}=2-4
 com.sofunny.sausage{Job.Worker*}=2-4
 com.sofunny.sausage=2-6
+
+# 逆战:未来
+com.tencent.tmgp.nz{GameThread}=7
+com.tencent.tmgp.nz{RenderThread}=2-4
+com.tencent.tmgp.nz{TaskGraphNP}=2-4
+com.tencent.tmgp.nz{Thread*}=5-6
+com.tencent.tmgp.nz=2-6
