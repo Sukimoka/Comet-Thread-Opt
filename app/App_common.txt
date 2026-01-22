@@ -321,6 +321,12 @@ com.fenbi.android.solar{VizWebView}=$(format_cpu_ranges "$p_core")
 com.fenbi.android.solar{Chrome_InProcGp}=$(format_cpu_ranges "$p_core")
 com.fenbi.android.solar=$(format_cpu_ranges "$e_core $p_core")
 
+# 快对AI
+com.kuaiduizuoye.scan{aiduizuoye.scan}=$(format_cpu_ranges "$p_core")
+com.kuaiduizuoye.scan{RenderThread}=$(format_cpu_ranges "$p_core")
+com.kuaiduizuoye.scan{Chrome_IOThread}=$(format_cpu_ranges "$p_core")
+com.kuaiduizuoye.scan=$(format_cpu_ranges "$e_core $p_core")
+
 # 豆包
 com.larus.nova{RenderThread}=$(format_cpu_ranges "$p_core")
 com.larus.nova{com.larus.nova}=$(format_cpu_ranges "$p_core")
