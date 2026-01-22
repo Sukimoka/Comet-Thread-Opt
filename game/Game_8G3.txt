@@ -314,3 +314,10 @@ com.tencent.tmgp.nz{RenderThread}=2-4
 com.tencent.tmgp.nz{TaskGraphNP}=2-4
 com.tencent.tmgp.nz{Thread*}=5-6
 com.tencent.tmgp.nz=2-6
+
+# 明日方舟:终末地
+com.hypergryph.endfield{UnityMain}=7
+com.hypergryph.endfield{UnityGfxDeviceW}=2-4
+com.hypergryph.endfield{Job.Worker*}=5-6
+com.hypergryph.endfield{Thread*}=2-4
+com.hypergryph.endfield=2-6
