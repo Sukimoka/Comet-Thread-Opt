@@ -1,6 +1,6 @@
 # 王者荣耀(CN,GLO)
 com.tencent.tmgp.sgame{UnityMain}=7
-com.tencent.tmgp.sgame{Unity*}=2-4
+com.tencent.tmgp.sgame{UnityGfxDeviceW}=2-4
 com.tencent.tmgp.sgame{Thread*}=5-6
 com.tencent.tmgp.sgame{CoreThread*}=2-4
 com.tencent.tmgp.sgame{Job.worker 1}=5-6
@@ -9,7 +9,7 @@ com.tencent.tmgp.sgame{*Thread}=5-6
 com.tencent.tmgp.sgame{NativeThread}=5-6
 com.tencent.tmgp.sgame=2-6
 com.levelinfinite.sgameGlobal.midaspay{UnityMain}=7
-com.levelinfinite.sgameGlobal.midaspay{Unity*}=2-4
+com.levelinfinite.sgameGlobal.midaspay{UnityGfxDeviceW}=2-4
 com.levelinfinite.sgameGlobal.midaspay{Thread*}=5-6
 com.levelinfinite.sgameGlobal.midaspay{CoreThread*}=2-4
 com.levelinfinite.sgameGlobal.midaspay{Job.worker 1}=5-6
