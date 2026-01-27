@@ -21,9 +21,9 @@ com.tencent.tmgp.pubgmhd{RenderThread*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.pubgmhd=$(format_cpu_ranges "$e_core $p_core")
 
 # PUBGM GLO
-com.tencent.ig{RenderThread*}=$(format_cpu_ranges "$hp_core")
-com.tencent.ig{UEGameThread}=2-$(format_cpu_ranges "$hp_core")
-com.tencent.ig{TaskGraphNP*}=2-$(format_cpu_ranges "$hp_core")
+com.tencent.ig{UEGameThread}=$(format_cpu_ranges "$hp_core")
+com.tencent.ig{RHIThread}=$(format_cpu_ranges "$hp_core")
+com.tencent.ig{TaskGraphNP*}=$(format_cpu_ranges "$hp_core")
 com.tencent.ig{MainThread-UE4}=$(format_cpu_ranges "$p_core"),$(format_cpu_ranges "$hp_core")
 com.tencent.ig=$(format_cpu_ranges "$e_core $p_core")
 
