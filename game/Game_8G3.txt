@@ -28,10 +28,10 @@ com.tencent.tmgp.pubgmhd=2-6
 
 
 # PUBGM GLO
-com.tencent.ig{RenderThread*}=7
-com.tencent.ig{UEGameThread}=2-7
-com.tencent.ig{TaskGraphNP*}=2-7
-com.tencent.ig{MainThread-UE4}=2-4,7
+com.tencent.ig{UEGameThread}=2-4
+com.tencent.ig{RHIThread}=2-4
+com.tencent.ig{TaskGraphNP*}=2-4
+com.tencent.ig{MainThread-UE4}=2-4
 com.tencent.ig=2-6
 
 # 使命召唤手游
