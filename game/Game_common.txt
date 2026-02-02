@@ -15,7 +15,7 @@ com.levelinfinite.sgameGlobal.midaspay=$(format_cpu_ranges "$e_core $p_core")
 
 # 和平精英
 com.tencent.tmgp.pubgmhd{Thread-*}=$(format_cpu_ranges "$hp_core")
-com.tencent.tmgp.pubgmhd{RHIThread}=$(format_cpu_ranges "$p_core")
+com.tencent.tmgp.pubgmhd{RHIThread}=$(format_cpu_ranges "$p_core $hp_core")
 com.tencent.tmgp.pubgmhd{TaskGraphNP*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.pubgmhd{RenderThread*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.pubgmhd=$(format_cpu_ranges "$e_core $p_core")
