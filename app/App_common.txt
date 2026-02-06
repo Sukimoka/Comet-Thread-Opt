@@ -129,8 +129,10 @@ com.bilibili.app.in=$(format_cpu_ranges "$e_core $p_core")
 
 # piliplus
 com.example.piliplus{Thread-*}=$(format_cpu_ranges "$p_core")
-com.example.piliplus{1.raster}=$(format_cpu_ranges "$p_core")
-com.example.piliplus{1.ui}=$(format_cpu_ranges "$p_core")
+com.example.piliplus{xample.piliplus}=$(format_cpu_ranges "$p_core")
+com.example.piliplus{MediaCodec_loop}=$(format_cpu_ranges "$p_core")
+com.example.piliplus{demux}=$(format_cpu_ranges "$p_core")
+com.example.piliplus{raster}=$(format_cpu_ranges "$p_core")
 com.example.piliplus=$(format_cpu_ranges "$e_core $p_core")
 
 # komikku
