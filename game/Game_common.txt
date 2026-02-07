@@ -318,4 +318,4 @@ com.hypergryph.endfield=$(format_cpu_ranges "$p_core $e_core")
 # 战争雷霆
 com.gaijingames.wtm{gaijingames.wtm}=$(format_cpu_ranges "$hp_core $p_core")
 com.gaijingames.wtm{AudioTrack}=$(format_cpu_ranges "$p_core")
-com.gaijingames.wtm=$(format_cpu_ranges "$p_core       $e_core")
+com.gaijingames.wtm=$(format_cpu_ranges "$p_core $e_core")

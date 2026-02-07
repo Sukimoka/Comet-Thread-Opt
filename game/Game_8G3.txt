@@ -26,7 +26,6 @@ com.tencent.tmgp.pubgmhd{TaskGraphNP[0-2]}=2-4
 com.tencent.tmgp.pubgmhd{MainThread-UE4}=2-4
 com.tencent.tmgp.pubgmhd=2-6
 
-
 # PUBGM GLO
 com.tencent.ig{UEGameThread}=2-4
 com.tencent.ig{RHIThread}=2-4
