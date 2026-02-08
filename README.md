@@ -2,8 +2,7 @@
 适用于SutoLiu的[AppOpt](https://gitee.com/sutoliu/AppOpt) 的配置文件                                            
 测试设备:OnePlus12 8G3                            
 
-# 更新说明                                            
-仅在酷安云盘,Telegram中更新，不再更新Github发行版                                                                                     
+# 更新说明                                                                             
 酷安链接[Click](https://www.coolapk.com/feed/67093275?s=NjFlZDBiZWQxOWVmOWFiZzY4YmNlNzZiega1540)                          
                                                 
 App:日常使用app线程                                                      
