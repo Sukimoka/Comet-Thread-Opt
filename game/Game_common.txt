@@ -22,8 +22,8 @@ com.tencent.tmgp.pubgmhd=$(format_cpu_ranges "$e_core $p_core")
 
 # PUBGM GLO
 com.tencent.ig{UEGameThread}=$(format_cpu_ranges "$hp_core")
-com.tencent.ig{RHIThread}=$(format_cpu_ranges "$hp_core")
-com.tencent.ig{TaskGraphNP*}=$(format_cpu_ranges "$hp_core")
+com.tencent.ig{RHIThread}=$(format_cpu_ranges "$p_core")
+com.tencent.ig{TaskGraphNP*}=$(format_cpu_ranges "$p_core")
 com.tencent.ig{MainThread-UE4}=$(format_cpu_ranges "$p_core"),$(format_cpu_ranges "$hp_core")
 com.tencent.ig=$(format_cpu_ranges "$e_core $p_core")
 
@@ -60,7 +60,7 @@ com.hypergryph.arknights.bilibili{UnityGfx*}=$(format_cpu_ranges "$p_core")
 com.hypergryph.arknights.bilibili{Thread-*}=$(format_cpu_ranges "$p_core")
 com.hypergryph.arknights.bilibili{Job.worker*}=$(format_cpu_ranges "$p_core")
 com.hypergryph.arknights.bilibili{Audio*}=$(format_cpu_ranges "$e_core $p_core")
-com.hypergryph.arknights.bilibili=$(format_cpu_ranges "$p_core")
+com.hypergryph.arknights.bilibili=$(format_cpu_ranges "$e_core $p_core")
 
 # 原神
 com.miHoYo.Yuanshen{UnityMain*}=$(format_cpu_ranges "$hp_core")
@@ -313,9 +313,9 @@ com.hypergryph.endfield{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.hypergryph.endfield{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
 com.hypergryph.endfield{Job.Worker*}=$(format_cpu_ranges "$p_core")
 com.hypergryph.endfield{Thread*}=$(format_cpu_ranges "$p_core")
-com.hypergryph.endfield=$(format_cpu_ranges "$p_core $e_core")
+com.hypergryph.endfield=$(format_cpu_ranges "$e_core $p_core")
 
 # 战争雷霆
 com.gaijingames.wtm{gaijingames.wtm}=$(format_cpu_ranges "$hp_core $p_core")
 com.gaijingames.wtm{AudioTrack}=$(format_cpu_ranges "$p_core")
-com.gaijingames.wtm=$(format_cpu_ranges "$p_core $e_core")
+com.gaijingames.wtm=$(format_cpu_ranges "$e_core $p_core")
