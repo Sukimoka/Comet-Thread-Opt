@@ -326,3 +326,9 @@ com.tencent.rmcn{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
 com.tencent.rmcn{Thread*}=$(format_cpu_ranges "$p_core")
 com.tencent.rmcn{AudioTrack}=$(format_cpu_ranges "$p_core")
 com.tencent.rmcn=$(format_cpu_ranges "$e_core $p_core")
+
+# 开门就是仙侠世界
+com.LoongCharm.infinityworld{GLThread*}=$(format_cpu_ranges "$hp_core")
+com.LoongCharm.infinityworld{V8 DefaultWorke}=$(format_cpu_ranges "$p_core")
+com.LoongCharm.infinityworld{m.infinityworld}=$(format_cpu_ranges "$p_core")
+com.LoongCharm.infinityworld=$(format_cpu_ranges "$e_core $p_core")
