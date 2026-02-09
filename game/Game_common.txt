@@ -319,3 +319,10 @@ com.hypergryph.endfield=$(format_cpu_ranges "$e_core $p_core")
 com.gaijingames.wtm{gaijingames.wtm}=$(format_cpu_ranges "$hp_core $p_core")
 com.gaijingames.wtm{AudioTrack}=$(format_cpu_ranges "$p_core")
 com.gaijingames.wtm=$(format_cpu_ranges "$e_core $p_core")
+
+# 失控进化
+com.tencent.rmcn{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.tencent.rmcn{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
+com.tencent.rmcn{Thread*}=$(format_cpu_ranges "$p_core")
+com.tencent.rmcn{AudioTrack}=$(format_cpu_ranges "$p_core")
+com.tencent.rmcn=$(format_cpu_ranges "$e_core $p_core")
