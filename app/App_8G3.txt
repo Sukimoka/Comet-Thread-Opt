@@ -135,6 +135,12 @@ com.example.piliplus{demux}=2-6
 com.example.piliplus{1.raster}=2-6
 com.example.piliplus=5-6
 
+# 红果免费短剧
+com.phoenix.read{om.phoenix.read}=2-6
+com.phoenix.read{RenderThread}=2-6
+com.phoenix.read{Thread*}=2-6
+com.phoenix.read=5-6
+
 # komikku
 app.komikku.beta{pp.komikku.beta}=2-6
 app.komikku.beta{*thread*}=2-6
@@ -211,6 +217,12 @@ com.sina.weibo{RenderThread}=2-6
 com.sina.weibo{Thread-*}=2-6
 com.sina.weibo{com.sina.weibo}=5-6
 com.sina.weibo=5-6
+
+# 小黑盒
+com.max.xiaoheihe{RenderThread}=2-6
+com.max.xiaoheihe{glide-animation}=5-6
+com.max.xiaoheihe{m.max.xiaoheihe}=2-6
+com.max.xiaoheihe=5-6
 
 # 贴吧
 com.baidu.tieba{RenderThread}=2-6

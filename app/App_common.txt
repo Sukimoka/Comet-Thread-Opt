@@ -135,6 +135,12 @@ com.example.piliplus{demux}=$(format_cpu_ranges "$p_core")
 com.example.piliplus{1.raster}=$(format_cpu_ranges "$p_core")
 com.example.piliplus=$(format_cpu_ranges "$e_core $p_core")
 
+# 红果免费短剧
+com.phoenix.read{om.phoenix.read}=$(format_cpu_ranges "$p_core")
+com.phoenix.read{RenderThread}=$(format_cpu_ranges "$p_core")
+com.phoenix.read{Thread*}=$(format_cpu_ranges "$p_core")
+com.phoenix.read=$(format_cpu_ranges "$e_core $p_core")
+
 # komikku
 app.komikku.beta{pp.komikku.beta}=$(format_cpu_ranges "$p_core")
 app.komikku.beta{*thread*}=$(format_cpu_ranges "$p_core")
@@ -209,6 +215,12 @@ com.sina.weibo{RenderThread}=$(format_cpu_ranges "$p_core")
 com.sina.weibo{Thread-*}=$(format_cpu_ranges "$p_core")
 com.sina.weibo{com.sina.weibo}=$(format_cpu_ranges "$p_core")
 com.sina.weibo=$(format_cpu_ranges "$e_core $p_core")
+
+# 小黑盒
+com.max.xiaoheihe{RenderThread}=$(format_cpu_ranges "$p_core")
+com.max.xiaoheihe{glide-animation}=$(format_cpu_ranges "$p_core")
+com.max.xiaoheihe{m.max.xiaoheihe}=$(format_cpu_ranges "$p_core")
+com.max.xiaoheihe=$(format_cpu_ranges "$e_core $p_core")
 
 # 贴吧
 com.baidu.tieba{RenderThread}=$(format_cpu_ranges "$p_core")
