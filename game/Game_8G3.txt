@@ -23,7 +23,7 @@ com.tencent.tmgp.pubgmhd{Thread-??}=7
 com.tencent.tmgp.pubgmhd{binder:*}=5-6
 com.tencent.tmgp.pubgmhd{*binder}=5-6
 com.tencent.tmgp.pubgmhd{TaskGraphNP[0-2]}=2-4
-com.tencent.tmgp.pubgmhd{MainThread-UE4}=2-4
+com.tencent.tmgp.pubgmhd{MainThread-UE4}=5-6
 com.tencent.tmgp.pubgmhd=2-6
 
 # PUBGM GLO
