@@ -382,6 +382,12 @@ com.microsoft.emmx{NetworkService}=$(format_cpu_ranges "$p_core")
 com.microsoft.emmx{hwuiTask*}=$(format_cpu_ranges "$p_core")
 com.microsoft.emmx=$(format_cpu_ranges "$e_core $p_core")
 
+# 顺丰同城骑士
+com.sfexpress.knight{fexpress.knight}=$(format_cpu_ranges "$p_core")
+com.sfexpress.knight{RenderThread}=$(format_cpu_ranges "$p_core")
+com.sfexpress.knight{binder}=$(format_cpu_ranges "$p_core")
+com.sfexpress.knight=$(format_cpu_ranges "$e_core $p_core")
+
 # 360极速浏览器
 com.qihoo.contents{.qihoo.contents}=$(format_cpu_ranges "$p_core")
 com.qihoo.contents{RenderThread}=$(format_cpu_ranges "$p_core")
