@@ -338,3 +338,10 @@ com.LoongCharm.infinityworld{GLThread*}=7
 com.LoongCharm.infinityworld{V8 DefaultWorke}=2-4
 com.LoongCharm.infinityworld{m.infinityworld}=2-4
 com.LoongCharm.infinityworld=2-6
+
+# 迷你世界(4399)
+com.minitech.miniworld.m4399{Thread*}=0-1
+com.minitech.miniworld.m4399{MiniRainbowMain}=7
+com.minitech.miniworld.m4399{MiniRenderThrea}=2-4
+com.minitech.miniworld.m4399{miniworld.m4399}=2-4
+com.minitech.miniworld.m4399=2-6
