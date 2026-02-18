@@ -20,12 +20,22 @@ com.tencent.tmgp.pubgmhd{TaskGraphNP*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.pubgmhd{RenderThread*}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.pubgmhd=$(format_cpu_ranges "$e_core $p_core")
 
-# PUBGM GLO
+# PUBGM (GLO,GLOCE,TW)
 com.tencent.ig{UEGameThread}=$(format_cpu_ranges "$hp_core")
 com.tencent.ig{RHIThread}=$(format_cpu_ranges "$p_core")
 com.tencent.ig{TaskGraphNP*}=$(format_cpu_ranges "$p_core")
-com.tencent.ig{MainThread-UE4}=$(format_cpu_ranges "$p_core"),$(format_cpu_ranges "$hp_core")
+com.tencent.ig{MainThread-UE4}=$(format_cpu_ranges "$p_core")
 com.tencent.ig=$(format_cpu_ranges "$e_core $p_core")
+com.tencent.igce{UEGameThread}=$(format_cpu_ranges "$hp_core")
+com.tencent.igce{RHIThread}=$(format_cpu_ranges "$p_core")
+com.tencent.igce{TaskGraphNP*}=$(format_cpu_ranges "$p_core")
+com.tencent.igce{MainThread-UE4}=$(format_cpu_ranges "$p_core")
+com.tencent.igce=$(format_cpu_ranges "$e_core $p_core")
+com.rekoo.pubgm{UEGameThread}=$(format_cpu_ranges "$hp_core")
+com.rekoo.pubgm{RHIThread}=$(format_cpu_ranges "$p_core")
+com.rekoo.pubgm{TaskGraphNP*}=$(format_cpu_ranges "$p_core")
+com.rekoo.pubgm{MainThread-UE4}=$(format_cpu_ranges "$p_core")
+com.rekoo.pubgm=$(format_cpu_ranges "$e_core $p_core")
 
 # 使命召唤手游
 com.tencent.tmgp.cod{UnityMain*}=$(format_cpu_ranges "$hp_core")
@@ -217,7 +227,7 @@ com.dragonli.projectsnow.lhm{RenderThread*}=$(format_cpu_ranges "$p_core")
 com.dragonli.projectsnow.lhm{GameThread}=$(format_cpu_ranges "$p_core")
 com.dragonli.projectsnow.lhm=$(format_cpu_ranges "$e_core $p_core")
 
-# 极限竞速
+# 巅峰极速
 com.netease.race{RHIThread}=$(format_cpu_ranges "$hp_core")
 com.netease.race{GameThread}=$(format_cpu_ranges "$e_core $p_core")
 com.netease.race{RenderThread}=$(format_cpu_ranges "$e_core $p_core")

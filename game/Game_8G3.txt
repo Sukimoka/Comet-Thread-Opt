@@ -26,12 +26,22 @@ com.tencent.tmgp.pubgmhd{TaskGraphNP[0-2]}=2-4
 com.tencent.tmgp.pubgmhd{MainThread-UE4}=5-6
 com.tencent.tmgp.pubgmhd=2-6
 
-# PUBGM GLO
-com.tencent.ig{UEGameThread}=2-4
+# PUBGM (GLO,GLOCE,TW)
+com.tencent.ig{UEGameThread}=7
 com.tencent.ig{RHIThread}=2-4
 com.tencent.ig{TaskGraphNP*}=2-4
-com.tencent.ig{MainThread-UE4}=2-4
+com.tencent.ig{MainThread-UE4}=5-6
 com.tencent.ig=2-6
+com.tencent.igce{UEGameThread}=7
+com.tencent.igce{RHIThread}=2-4
+com.tencent.igce{TaskGraphNP*}=2-4
+com.tencent.igce{MainThread-UE4}=5-6
+com.tencent.igce=2-6
+com.rekoo.pubgm{UEGameThread}=7
+com.rekoo.pubgm{RHIThread}=2-4
+com.rekoo.pubgm{TaskGraphNP*}=2-4
+com.rekoo.pubgm{MainThread-UE4}=5-6
+com.rekoo.pubgm=2-6
 
 # 使命召唤手游
 com.tencent.tmgp.cod{UnityMain*}=7
@@ -223,7 +233,7 @@ com.dragonli.projectsnow.lhm{RenderThread*}=2-4
 com.dragonli.projectsnow.lhm{GameThread}=2-4
 com.dragonli.projectsnow.lhm=2-6
 
-# 极限竞速
+# 巅峰极速
 com.netease.race{RHIThread}=7
 com.netease.race{GameThread}=2-6
 com.netease.race{RenderThread}=2-6
