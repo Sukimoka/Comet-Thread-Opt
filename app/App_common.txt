@@ -142,6 +142,12 @@ com.example.piliplus{demux}=$(format_cpu_ranges "$p_core")
 com.example.piliplus{1.raster}=$(format_cpu_ranges "$p_core")
 com.example.piliplus=$(format_cpu_ranges "$e_core $p_core")
 
+# 优乐享视频
+com.yishu.ylxsp{com.yishu.ylxsp}=$(format_cpu_ranges "$p_core")
+com.yishu.ylxsp{MediaCodec_loop}=$(format_cpu_ranges "$p_core")
+com.yishu.ylxsp{1.raster}=$(format_cpu_ranges "$p_core")
+com.yishu.ylxsp=$(format_cpu_ranges "$e_core $p_core")
+
 # 红果免费短剧
 com.phoenix.read{om.phoenix.read}=$(format_cpu_ranges "$p_core")
 com.phoenix.read{RenderThread}=$(format_cpu_ranges "$p_core")
@@ -325,6 +331,12 @@ com.xuzly.hy.lanerc.app=$(format_cpu_ranges "$e_core $p_core")
 com.qidian.QDReader{*.QDReader}=$(format_cpu_ranges "$p_core")
 com.qidian.QDReader{RenderThread}=$(format_cpu_ranges "$p_core")
 com.qidian.QDReader=$(format_cpu_ranges "$e_core $p_core")
+
+# 番茄免费小说
+com.dragon.read{RenderThread}=$(format_cpu_ranges "$p_core")
+com.dragon.read{HeapTaskDaemon}=$(format_cpu_ranges "$p_core")
+com.dragon.read{com.dragon.read}=$(format_cpu_ranges "$p_core")
+com.dragon.read=$(format_cpu_ranges "$e_core $p_core")
 
 # 七猫小说
 com.kmxs.reader{*.reader}=$(format_cpu_ranges "$p_core")
