@@ -302,6 +302,13 @@ com.kugou.android.lite{ou.android.lite}=5-6
 com.kugou.android.lite{RenderThread}=2-6
 com.kugou.android.lite=5-6
 
+# 酷我音乐
+cn.kuwo.player{dMessageHandler}=2-6
+cn.kuwo.player{RenderThread}=2-6
+cn.kuwo.player{cdn.kuwo.cn*}=2-6
+cn.kuwo.player{cn.kuwo.player}=5-6
+cn.kuwo.player=5-6
+
 # 汽水音乐
 com.luna.music{*.music}=5-6
 com.luna.music{RenderThread}=2-6

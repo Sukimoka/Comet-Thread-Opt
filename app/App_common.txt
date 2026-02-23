@@ -300,6 +300,13 @@ com.kugou.android.lite{ou.android.lite}=$(format_cpu_ranges "$p_core")
 com.kugou.android.lite{RenderThread}=$(format_cpu_ranges "$p_core")
 com.kugou.android.lite=$(format_cpu_ranges "$e_core $p_core")
 
+# 酷我音乐
+cn.kuwo.player{dMessageHandler}=$(format_cpu_ranges "$p_core")
+cn.kuwo.player{RenderThread}=$(format_cpu_ranges "$p_core")
+cn.kuwo.player{cdn.kuwo.cn*}=$(format_cpu_ranges "$p_core")
+cn.kuwo.player{cn.kuwo.player}=$(format_cpu_ranges "$p_core")
+cn.kuwo.player=$(format_cpu_ranges "$e_core $p_core")
+
 # 汽水音乐
 com.luna.music{*.music}=$(format_cpu_ranges "$p_core")
 com.luna.music{RenderThread}=$(format_cpu_ranges "$p_core")
