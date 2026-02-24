@@ -349,3 +349,9 @@ com.minitech.miniworld.m4399{MiniRainbowMain}=$(format_cpu_ranges "$hp_core")
 com.minitech.miniworld.m4399{MiniRenderThrea}=$(format_cpu_ranges "$p_core")
 com.minitech.miniworld.m4399{miniworld.m4399}=$(format_cpu_ranges "$p_core")
 com.minitech.miniworld.m4399=$(format_cpu_ranges "$e_core $p_core")
+
+# 棕色尘埃2
+com.neowizgames.game.browndust2{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.neowizgames.game.browndust2{Thread-*}=$(format_cpu_ranges "$p_core $hp_core")
+com.neowizgames.game.browndust2{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
+com.neowizgames.game.browndust2=$(format_cpu_ranges "$e_core $p_core")

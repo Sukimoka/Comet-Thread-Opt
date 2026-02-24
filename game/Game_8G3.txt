@@ -355,3 +355,9 @@ com.minitech.miniworld.m4399{MiniRainbowMain}=7
 com.minitech.miniworld.m4399{MiniRenderThrea}=2-4
 com.minitech.miniworld.m4399{miniworld.m4399}=2-4
 com.minitech.miniworld.m4399=2-6
+
+# 棕色尘埃2
+com.neowizgames.game.browndust2{UnityMain}=7
+com.neowizgames.game.browndust2{Thread-*}=2-4,7
+com.neowizgames.game.browndust2{UnityGfxDeviceW}=2-4
+com.neowizgames.game.browndust2=2-6
