@@ -355,3 +355,9 @@ com.neowizgames.game.browndust2{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.neowizgames.game.browndust2{Thread-*}=$(format_cpu_ranges "$p_core $hp_core")
 com.neowizgames.game.browndust2{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
 com.neowizgames.game.browndust2=$(format_cpu_ranges "$e_core $p_core")
+
+# Roblox
+com.roblox.client{Thread-*}=$(format_cpu_ranges "$hp_core")
+com.roblox.client{RBX Worker A}=$(format_cpu_ranges "$p_core")
+com.roblox.client{RBX Worker B}=$(format_cpu_ranges "$p_core")
+com.roblox.client=$(format_cpu_ranges "$e_core $p_core")

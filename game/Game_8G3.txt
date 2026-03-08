@@ -361,3 +361,9 @@ com.neowizgames.game.browndust2{UnityMain}=7
 com.neowizgames.game.browndust2{Thread-*}=2-4,7
 com.neowizgames.game.browndust2{UnityGfxDeviceW}=2-4
 com.neowizgames.game.browndust2=2-6
+
+# Roblox
+com.roblox.client{Thread-*}=7
+com.roblox.client{RBX Worker A}=2-4
+com.roblox.client{RBX Worker B}=2-4
+com.roblox.client=2-6
