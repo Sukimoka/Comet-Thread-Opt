@@ -367,3 +367,9 @@ com.tencent.tmgp.djsy{Thread-*}=$(format_cpu_ranges "$hp_core")
 com.tencent.tmgp.djsy{ncent.tmgp.djsy}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.djsy{MainThread}=$(format_cpu_ranges "$p_core")
 com.tencent.tmgp.djsy=$(format_cpu_ranges "$e_core $p_core")
+
+# 鹅鸭杀
+com.seayoo.ggd{UnityMain}=$(format_cpu_ranges "$hp_core")
+com.seayoo.ggd{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
+com.seayoo.ggd{liteav_audio_pr}=$(format_cpu_ranges "$p_core")
+com.seayoo.ggd=$(format_cpu_ranges "$e_core $p_core")
