@@ -443,6 +443,12 @@ org.breezyweather{g.breezyweather}=$(format_cpu_ranges "$p_core")
 org.breezyweather{Binder:*}=$(format_cpu_ranges "$p_core")
 org.breezyweather=$(format_cpu_ranges "$e_core $p_core")
 
+# 今日水印相机
+com.xhey.xcamera{om.xhey.xcamera}=$(format_cpu_ranges "$p_core")
+com.xhey.xcamera{Algorithm-}=$(format_cpu_ranges "$p_core")
+com.xhey.xcamera{RxCachedThreadS}=$(format_cpu_ranges "$hp_core")
+com.xhey.xcamera=$(format_cpu_ranges "$e_core $p_core")
+
 #玩机软件
 # Noactive
 cn.myflv.noactive{.myflv.noactive}=$(format_cpu_ranges "$p_core")
