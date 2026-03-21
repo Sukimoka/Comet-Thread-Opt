@@ -367,3 +367,9 @@ com.roblox.client{Thread-*}=7
 com.roblox.client{RBX Worker A}=2-4
 com.roblox.client{RBX Worker B}=2-4
 com.roblox.client=2-6
+
+# 妄想山海
+com.tencent.tmgp.djsy{Thread-*}=7
+com.tencent.tmgp.djsy{ncent.tmgp.djsy}=5-6
+com.tencent.tmgp.djsy{MainThread}=2-4
+com.tencent.tmgp.djsy=2-6
