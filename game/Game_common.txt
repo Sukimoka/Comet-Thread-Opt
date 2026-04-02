@@ -373,3 +373,17 @@ com.seayoo.ggd{UnityMain}=$(format_cpu_ranges "$hp_core")
 com.seayoo.ggd{UnityGfxDeviceW}=$(format_cpu_ranges "$p_core")
 com.seayoo.ggd{liteav_audio_pr}=$(format_cpu_ranges "$p_core")
 com.seayoo.ggd=$(format_cpu_ranges "$e_core $p_core")
+
+# 洛克王国:世界
+com.tencent.nrc{GameThread}=$(format_cpu_ranges "$hp_core")
+com.tencent.nrc{RHIThread}=$(format_cpu_ranges "$p_core")
+com.tencent.nrc{RenderThread*}=$(format_cpu_ranges "$p_core")
+com.tencent.nrc{TaskGraphHP*}=$(format_cpu_ranges "$p_core")
+com.tencent.nrc=$(format_cpu_ranges "$e_core $p_core")
+
+# 萤火突击
+com.netease.yhtj{Game*}=$(format_cpu_ranges "$hp_core")
+com.netease.yhtj{ALooperThread}=$(format_cpu_ranges "$p_core")
+com.netease.yhtj{om.netease.yhtj}=$(format_cpu_ranges "$p_core")
+com.netease.yhtj{MainThread*}=$(format_cpu_ranges "$p_core")
+com.netease.yhtj=$(format_cpu_ranges "$e_core $p_core")
