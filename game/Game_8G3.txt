@@ -393,3 +393,10 @@ com.netease.yhtj{ALooperThread}=2-4
 com.netease.yhtj{om.netease.yhtj}=2-4
 com.netease.yhtj{MainThread*}=5-6
 com.netease.yhtj=2-6
+
+# 王者荣耀世界
+com.tencent.ngr{GameThread}=7,2-4
+com.tencent.ngr{RHIThread}=7,2-4
+com.tencent.ngr{RenderThread}=7,2-4
+com.tencent.ngr{TaskGraphHP*}=2-4
+com.tencent.ngr=2-6

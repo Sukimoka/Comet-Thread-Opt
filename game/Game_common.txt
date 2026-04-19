@@ -387,3 +387,10 @@ com.netease.yhtj{ALooperThread}=$(format_cpu_ranges "$p_core")
 com.netease.yhtj{om.netease.yhtj}=$(format_cpu_ranges "$p_core")
 com.netease.yhtj{MainThread*}=$(format_cpu_ranges "$p_core")
 com.netease.yhtj=$(format_cpu_ranges "$e_core $p_core")
+
+# 王者荣耀世界
+com.tencent.ngr{GameThread}=$(format_cpu_ranges "$hp_core")
+com.tencent.ngr{RHIThread}=$(format_cpu_ranges "$p_core")
+com.tencent.ngr{RenderThread}=$(format_cpu_ranges "$p_core")
+com.tencent.ngr{TaskGraphHP*}=$(format_cpu_ranges "$p_core")
+com.tencent.ngr=$(format_cpu_ranges "$e_core $p_core")
