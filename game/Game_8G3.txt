@@ -408,3 +408,10 @@ com.tencent.ngr{RHIThread}=7,2-4
 com.tencent.ngr{RenderThread}=7,2-4
 com.tencent.ngr{TaskGraphHP*}=2-4
 com.tencent.ngr=2-6
+
+# 异环
+com.hottagames.yh.laohu{RHIThread}=7,2-4
+com.hottagames.yh.laohu{GameThread}=7,2-4
+com.hottagames.yh.laohu{Render Thread}=7,2-4
+com.hottagames.yh.laohu{Foregro-rker*}=2-4
+com.hottagames.yh.laohu=2-6

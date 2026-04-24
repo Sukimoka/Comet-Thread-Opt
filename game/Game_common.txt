@@ -399,3 +399,10 @@ com.tencent.ngr{RHIThread}=$(format_cpu_ranges "$p_core")
 com.tencent.ngr{RenderThread}=$(format_cpu_ranges "$p_core")
 com.tencent.ngr{TaskGraphHP*}=$(format_cpu_ranges "$p_core")
 com.tencent.ngr=$(format_cpu_ranges "$e_core $p_core")
+
+# 异环
+com.hottagames.yh.laohu{RHIThread}=$(format_cpu_ranges "$hp_core")
+com.hottagames.yh.laohu{GameThread}=$(format_cpu_ranges "$p_core")
+com.hottagames.yh.laohu{Render Thread}=$(format_cpu_ranges "$p_core")
+com.hottagames.yh.laohu{Foregro-rker*}=$(format_cpu_ranges "$p_core")
+com.hottagames.yh.laohu=$(format_cpu_ranges "$e_core $p_core")
