@@ -352,6 +352,12 @@ com.kmxs.reader{*.reader}=5-6
 com.kmxs.reader{RenderThread}=2-6
 com.kmxs.reader=5-6
 
+# 阅读(OSS)
+io.legado.app.release{ado.app.release}=2-6
+io.legado.app.release{RenderThread}=2-6
+io.legado.app.release{binder*}=5-6
+io.legado.app.release=5-6
+
 #地图
 # 高德地图  
 com.autonavi.minimap{AJXBizCheck}=5-6  
