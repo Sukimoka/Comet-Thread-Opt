@@ -182,6 +182,11 @@ com.gamamobi.nikke{Thread-*}=2-4
 com.gamamobi.nikke{UnityChoreograp}=2-4
 com.gamamobi.nikke{FMOD*}=2-4
 com.gamamobi.nikke=2-6
+com.proximabeta.nikke{UnityMain}=7
+com.proximabeta.nikke{Thread-*}=2-4
+com.proximabeta.nikke{UnityChoreograp}=2-4
+com.proximabeta.nikke{FMOD*}=2-4
+com.proximabeta.nikke=2-6
 
 # 荒野乱斗
 com.tencent.tmgp.supercell.brawlstars{Mainloop}=7
